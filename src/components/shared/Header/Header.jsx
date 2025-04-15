@@ -1,11 +1,16 @@
+import { useSelector } from "react-redux";
 import BottomMenu from "./BottomMenu";
 import LoginForm from "./LoginForm";
+import AccountWrap from "./AccountWrap";
+import { useLogo } from "../../../context/ApiProvider";
 
 const Header = () => {
+  const { logo } = useLogo();
+  const { token } = useSelector((state) => state.auth);
   return (
     <div className="top">
       <div className="header full-wrap">
-        <h1>
+        <h1 style={{ backgroundImage: `url(${logo})` }}>
           <a href="/">SKYEXCHANGE </a>
         </h1>
         <div id="searchWrap" className="search-wrap">
@@ -37,7 +42,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <LoginForm />
+        {token ? <AccountWrap /> : <LoginForm />}
       </div>
       {/* Menu Wrap */}
       <BottomMenu />

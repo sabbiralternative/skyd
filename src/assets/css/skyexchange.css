@@ -3399,7 +3399,7 @@ textarea:focus {
 .header.full-wrap {
   width: 100%;
   min-height: inherit;
-  height: 54px;
+  height: 70px;
 }
 
 .header h1 {
