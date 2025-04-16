@@ -155,19 +155,19 @@ const PaymentMethods = ({
                   {method?.type == "upi" || method?.type == "pg" ? (
                     <img
                       style={{ height: "20px", width: "20px" }}
-                      src="/upi.png"
+                      src="/icon/upi.png"
                     />
                   ) : null}
                   {method?.type == "usdt" ? (
                     <img
                       style={{ height: "20px", width: "20px" }}
-                      src="/usdt.png"
+                      src="/icon/usdt.png"
                     />
                   ) : null}
                   {method?.type == "whatsapp" ? (
                     <img
                       style={{ height: "23px", width: "23px" }}
-                      src={"/wp_support.webp"}
+                      src={"/icon/wp_support.webp"}
                     />
                   ) : null}
                 </div>
@@ -1003,22 +1003,22 @@ const PaymentMethods = ({
                 >
                   <img
                     style={{ height: "40px" }}
-                    src="/assets/PHONEPE_WEB.png"
+                    src="/icon/PHONEPE_WEB.png"
                     alt=""
                   />
                   <img
                     style={{ height: "40px" }}
-                    src="/assets/payment_types.png"
+                    src="/icon/payment_types.png"
                     alt=""
                   />
                   <img
                     style={{ height: "40px" }}
-                    src="/assets/GPAY_WEB.png"
+                    src="/icon/GPAY_WEB.png"
                     alt=""
                   />
                   <img
                     style={{ height: "40px" }}
-                    src="/assets/BHIM_WEB.png"
+                    src="/icon/BHIM_WEB.png"
                     alt=""
                   />
                 </div>
@@ -1060,7 +1060,7 @@ const PaymentMethods = ({
 
                   <img
                     style={{ height: "20px", width: "20px" }}
-                    src="/public/assets/upi.png"
+                    src="/icon/upi.png"
                   />
                 </div>
               </div>
@@ -1084,7 +1084,7 @@ const PaymentMethods = ({
 
                   <img
                     style={{ height: "20px", width: "20px" }}
-                    src="/assets/GPAY_WEB.png"
+                    src="/icon/GPAY_WEB.png"
                   />
                 </div>
               </div>
@@ -1108,7 +1108,7 @@ const PaymentMethods = ({
 
                   <img
                     style={{ height: "20px", width: "20px" }}
-                    src="/assets/payment_types.png"
+                    src="/icon/payment_types.png"
                   />
                 </div>
               </div>
@@ -1132,7 +1132,7 @@ const PaymentMethods = ({
 
                   <img
                     style={{ height: "20px", width: "20px" }}
-                    src="/assets/PHONEPE_WEB.png"
+                    src="/icon/PHONEPE_WEB.png"
                   />
                 </div>
               </div>

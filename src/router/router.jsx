@@ -10,7 +10,6 @@ import StakeSetting from "../pages/StakeSetting/StakeSetting";
 import InPlay from "../pages/InPlay/InPlay";
 import Deposit from "../pages/Deposit/Deposit";
 import Withdraw from "../pages/Withdraw/Withdraw";
-import Account from "../pages/Account/Account";
 import DepositWithdrawReport from "../pages/DepositWithdrawReport/DepositWithdrawReport";
 import OpenBets from "../pages/OpenBets/OpenBets";
 import BettingProfitLoss from "../pages/BettingProfitLoss/BettingProfitLoss";
@@ -56,10 +55,7 @@ export const router = createBrowserRouter(
           path: "/withdraw",
           element: <Withdraw />,
         },
-        {
-          path: "/account",
-          element: <Account />,
-        },
+
         {
           path: "/deposit-withdraw-report",
           element: <DepositWithdrawReport />,
@@ -92,6 +88,10 @@ export const router = createBrowserRouter(
           path: "/change-password",
           element: <ChangePassword />,
         },
+        {
+          path: "/edit-stake",
+          element: <StakeSetting />,
+        },
       ],
     },
     {
@@ -105,11 +105,6 @@ export const router = createBrowserRouter(
     {
       path: "/forgot-password",
       element: <ForgotPassword />,
-    },
-
-    {
-      path: "/edit-stake",
-      element: <StakeSetting />,
     },
   ],
   {

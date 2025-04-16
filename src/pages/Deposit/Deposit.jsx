@@ -14,8 +14,8 @@ const Deposit = () => {
   const [paymentId, setPaymentId] = useState("");
 
   return (
-    <div id="page" role="page">
-      <div className="mian-wrap">
+    <div className="full-wrap">
+      <div id="centerColumn" className="col-center">
         <div className="center-container">
           {!paymentMethods && !uploadTransaction && (
             <AmountBox

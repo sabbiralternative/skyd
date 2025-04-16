@@ -84,7 +84,7 @@ const BankAccounts = ({
                         loading="lazy"
                         alt=""
                         className=""
-                        src="/bankPicture.svg"
+                        src="/icon/bankPicture.svg"
                       />
                       <p className=""> {data?.bankName}</p>
                     </div>
@@ -111,7 +111,7 @@ const BankAccounts = ({
                         <img
                           style={{ height: "auto" }}
                           loading="lazy"
-                          src="/delete-icon.svg"
+                          src="/icon/delete-icon.svg"
                           alt=""
                           className="delete-logo "
                         />
@@ -355,7 +355,7 @@ const BankAccounts = ({
             <button onClick={() => setAddBank(true)} className="plus-btn  ">
               <img
                 loading="lazy"
-                src="assets/img/plus-logo.svg"
+                src="/icon/plus-logo.svg"
                 alt=""
                 className=""
               />

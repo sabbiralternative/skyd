@@ -46,7 +46,7 @@ const WithdrawConfirm = ({
           }}
           className="back-nav-bc "
         >
-          <img loading="lazy" src="/back-arrow.svg" alt="" className="" />
+          <img loading="lazy" src="/icon/back-arrow.svg" alt="" className="" />
           <span className="back-nav-title-bc ellipsis ">
             Back to Select Account
           </span>
@@ -63,7 +63,7 @@ const WithdrawConfirm = ({
               setAmount("");
             }}
           >
-            <img loading="lazy" src="/edit.svg" alt="" className="" />
+            <img loading="lazy" src="/icon/edit.svg" alt="" className="" />
           </div>
         </div>
         <input
@@ -83,7 +83,7 @@ const WithdrawConfirm = ({
             }}
             className="edit-logo "
           >
-            <img loading="lazy" src="/edit.svg" alt="" className="" />
+            <img loading="lazy" src="/icon/edit.svg" alt="" className="" />
           </div>
         </div>
         <div className="bank-card1 ">
@@ -94,7 +94,7 @@ const WithdrawConfirm = ({
                 loading="lazy"
                 alt=""
                 className=""
-                src="/bankPicture.svg"
+                src="/icon/bankPicture.svg"
               />
               <p className="">{bank?.bankName}</p>
             </div>

@@ -33,8 +33,8 @@ const Withdraw = () => {
   }, [bankData, setAddBank, showBankAccount]);
 
   return (
-    <div id="page" role="page">
-      <div className="mian-wrap">
+    <div className="full-wrap">
+      <div id="centerColumn" className="col-center">
         <div className="center-container">
           {!showBankAccount && !confirmWithdraw && (
             <SelectAmount

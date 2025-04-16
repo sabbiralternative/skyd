@@ -1,93 +1,215 @@
-import { Link, useNavigate } from "react-router-dom";
-import images from "../../assets/images";
-import { useEditButtonValuesMutation } from "../../redux/features/events/events";
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { API } from "../../api";
 import toast from "react-hot-toast";
+import { AxiosSecure } from "../../lib/AxiosSecure";
 
 const StakeSetting = () => {
-  const [editButtonValue] = useEditButtonValuesMutation();
+  window.scrollTo(0, 0);
   const navigate = useNavigate();
-  const stakes = JSON.parse(localStorage.getItem("buttonValue"));
-  const { handleSubmit, register, watch } = useForm({
-    defaultValues: {
-      buttonGameValues: stakes,
-    },
-  });
+  const buttonGameValue = JSON.parse(localStorage.getItem("buttonValue"));
+  const { register, handleSubmit } = useForm();
 
-  const buttonGameValues = watch("buttonGameValues");
+  const onSubmit = async ({
+    buttons0value,
+    buttons1value,
+    buttons2value,
+    buttons3value,
+    buttons4value,
+    buttons5value,
+    buttons6value,
+    buttons7value,
+  }) => {
+    const { data } = await AxiosSecure.post(API.buttonValue, {
+      game: [
+        {
+          label: 100,
+          value: buttons0value,
+        },
+        {
+          label: 100,
+          value: buttons1value,
+        },
+        {
+          label: 100,
+          value: buttons2value,
+        },
+        {
+          label: 100,
+          value: buttons3value,
+        },
+        {
+          label: 100,
+          value: buttons4value,
+        },
+        {
+          label: 100,
+          value: buttons5value,
+        },
+        {
+          label: 100,
+          value: buttons6value,
+        },
+        {
+          label: 100,
+          value: buttons7value,
+        },
+      ],
+    });
 
-  const onSubmit = async () => {
-    const payload = {
-      game: buttonGameValues?.map((btn) => ({
-        label: parseFloat(btn?.value),
-        value: parseFloat(btn?.value),
-      })),
-    };
-
-    const res = await editButtonValue(payload).unwrap();
-    if (res.success) {
-      toast.success(res?.result?.message);
+    if (data.success) {
+      toast.success(data?.result?.message);
       localStorage.removeItem("buttonValue");
-      const gameButtonsValues = buttonGameValues;
+      const gameButtonsValues = [
+        {
+          label: 100,
+          value: buttons0value,
+        },
+        {
+          label: 100,
+          value: buttons1value,
+        },
+        {
+          label: 100,
+          value: buttons2value,
+        },
+        {
+          label: 100,
+          value: buttons3value,
+        },
+        {
+          label: 100,
+          value: buttons4value,
+        },
+        {
+          label: 100,
+          value: buttons5value,
+        },
+        {
+          label: 100,
+          value: buttons6value,
+        },
+        {
+          label: 100,
+          value: buttons7value,
+        },
+      ];
+      /* set edited button values */
       localStorage.setItem("buttonValue", JSON.stringify(gameButtonsValues));
-      navigate("/");
+      navigate("/account");
     }
   };
   return (
-    <div data-role="page" className="ui-page ui-page-theme-a ui-page-active">
-      <div
-        className="overlay right-side"
-        id="settingDiv"
-        style={{ display: "flex" }}
-      >
-        <div className="side-wrap setting-wrap" id="settingSlide">
-          <div className="side-head">
-            <h3 className="a-setting">
-              <img src={images.transparent} />
-              Setting
-            </h3>
-            <Link className="close ui-link" to="/" id="settingClose"></Link>
-          </div>
-          <div id="coinList" className="side-content">
-            <h3>Stake</h3>
-            <form
-              onSubmit={handleSubmit(onSubmit)}
-              id="editCustomizeStakeList"
-              className="setting-block stake-setting"
-              style={{ display: "flex", flexDirection: "column" }}
-            >
-              <dt>Quick Stakes</dt>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "auto auto auto auto",
-                }}
-              >
-                {stakes?.map((_, idx) => {
-                  return (
-                    <dd key={idx}>
-                      <div className="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+    <div className="full-wrap">
+      <div id="centerColumn" className="col-center">
+        <div className="e-p-body-bc">
+          <div className="login-page-abc">
+            <div>
+              <div className="login-page">
+                <div className="login-box">
+                  <div className="login-card">
+                    <div className="login-card-header">
+                      <span>Edit Stake</span>
+                    </div>
+
+                    <form
+                      onSubmit={handleSubmit(onSubmit)}
+                      style={{ width: "100%" }}
+                      className="animateSignInFormUserId ng-dirty ng-touched ng-invalid"
+                      data-gtm-form-interact-id="2"
+                    >
+                      <div className="edit-stakes-input-section">
                         <input
-                          {...register(`buttonGameValues.${idx}.value`)}
+                          {...register("buttons0value", {
+                            required: true,
+                          })}
+                          defaultValue={buttonGameValue[0].value}
                           type="number"
+                          className="edit-stakes-input ng-untouched ng-pristine ng-valid ng-star-inserted"
+                          pattern="\d*"
+                        />
+
+                        <input
+                          {...register("buttons1value", {
+                            required: true,
+                          })}
+                          defaultValue={buttonGameValue[1].value}
+                          type="number"
+                          className="edit-stakes-input ng-untouched ng-pristine ng-valid ng-star-inserted"
+                          pattern="\d*"
+                        />
+
+                        <input
+                          {...register("buttons2value", {
+                            required: true,
+                          })}
+                          defaultValue={buttonGameValue[2].value}
+                          type="number"
+                          className="edit-stakes-input ng-untouched ng-pristine ng-valid ng-star-inserted"
+                          pattern="\d*"
+                        />
+
+                        <input
+                          {...register("buttons3value", {
+                            required: true,
+                          })}
+                          defaultValue={buttonGameValue[3].value}
+                          type="number"
+                          className="edit-stakes-input ng-untouched ng-pristine ng-valid ng-star-inserted"
+                          pattern="\d*"
                         />
                       </div>
-                    </dd>
-                  );
-                })}
-              </div>
 
-              <dd className="col-stake_edit">
-                <button
-                  type="submit"
-                  style={{ width: "100%", display: "block" }}
-                  id="ok"
-                  className="btn-send ui-link"
-                >
-                  OK
-                </button>
-              </dd>
-            </form>
+                      <div className="edit-stakes-input-section">
+                        <input
+                          {...register("buttons4value", {
+                            required: true,
+                          })}
+                          defaultValue={buttonGameValue[4].value}
+                          type="number"
+                          className="edit-stakes-input ng-untouched ng-pristine ng-valid ng-star-inserted"
+                          pattern="\d*"
+                        />
+
+                        <input
+                          {...register("buttons5value", {
+                            required: true,
+                          })}
+                          defaultValue={buttonGameValue[5].value}
+                          type="number"
+                          className="edit-stakes-input ng-untouched ng-pristine ng-valid ng-star-inserted"
+                          pattern="\d*"
+                        />
+
+                        <input
+                          {...register("buttons6value", {
+                            required: true,
+                          })}
+                          defaultValue={buttonGameValue[6].value}
+                          type="number"
+                          className="edit-stakes-input ng-untouched ng-pristine ng-valid ng-star-inserted"
+                          pattern="\d*"
+                        />
+
+                        <input
+                          {...register("buttons7value", {
+                            required: true,
+                          })}
+                          defaultValue={buttonGameValue[7].value}
+                          type="number"
+                          className="edit-stakes-input ng-untouched ng-pristine ng-valid ng-star-inserted"
+                          pattern="\d*"
+                        />
+                      </div>
+
+                      <button type="submit" className="login-btn">
+                        <span>Update</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

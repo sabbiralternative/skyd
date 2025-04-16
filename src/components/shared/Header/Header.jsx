@@ -5,6 +5,7 @@ import AccountWrap from "./AccountWrap";
 import { useLogo } from "../../../context/ApiProvider";
 import { useState } from "react";
 import Referral from "../../modals/Referral";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [showReferral, setShowReferral] = useState(false);
@@ -16,7 +17,7 @@ const Header = () => {
       <div className="top">
         <div className="header full-wrap">
           <h1 style={{ backgroundImage: `url(${logo})` }}>
-            <a href="/">SKYEXCHANGE </a>
+            <Link to="/">SKYEXCHANGE </Link>
           </h1>
           <div id="searchWrap" className="search-wrap">
             <div>

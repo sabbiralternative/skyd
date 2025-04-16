@@ -10,18 +10,43 @@ const SelectAmount = ({ setAmount, amount, setShowBankAccount }) => {
     >
       <div className="withdraw-section  ng-star-inserted">
         <div className="bonus-amount ">
-          <img loading="lazy" src="/star.svg" alt="" className="bonus-star1 " />
-          <img loading="lazy" src="/star.svg" alt="" className="bonus-star2 " />
-          <img loading="lazy" src="/star.svg" alt="" className="bonus-star3 " />
-          <img loading="lazy" src="/star.svg" alt="" className="wallet-logo " />
+          <img
+            loading="lazy"
+            src="/icon/star.svg"
+            alt=""
+            className="bonus-star1 "
+          />
+          <img
+            loading="lazy"
+            src="/icon/star.svg"
+            alt=""
+            className="bonus-star2 "
+          />
+          <img
+            loading="lazy"
+            src="/icon/star.svg"
+            alt=""
+            className="bonus-star3 "
+          />
+          <img
+            loading="lazy"
+            src="/icon/star.svg"
+            alt=""
+            className="wallet-logo "
+          />
           <div className="">
             <img
               loading="lazy"
-              src="/star.svg"
+              src="/icon/star.svg"
               alt=""
               className="wallet-3D-frame "
             />
-            <img loading="lazy" src="/star.svg" alt="" className="wallet-3d " />
+            <img
+              loading="lazy"
+              src="/icon/star.svg"
+              alt=""
+              className="wallet-3d "
+            />
           </div>
           <div className="wallet-card ">
             <span className="wallet-amount ">₹ {data?.mainWallet}</span>
@@ -103,7 +128,6 @@ const SelectAmount = ({ setAmount, amount, setShowBankAccount }) => {
           </form>
         </div>
         <button
-          style={{ border: "none", background: "white", color: "black" }}
           disabled={amount < data?.minimumWithdraw || amount > data?.mainWallet}
           onClick={() => setShowBankAccount(true)}
           className="btnn1 "
