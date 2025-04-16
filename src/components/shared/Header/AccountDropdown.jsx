@@ -1,7 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../../redux/features/auth/authSlice";
+import { Link } from "react-router-dom";
+import { Settings } from "../../../api";
 
-const AccountDropdown = () => {
+const AccountDropdown = ({ setShowReferral, setShowDropdown }) => {
   const { user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
@@ -38,6 +40,20 @@ const AccountDropdown = () => {
         >
           Account Statement
         </a>
+      </li>
+      {Settings.referral && (
+        <li
+          onClick={() => {
+            setShowReferral(true);
+            setShowDropdown(false);
+          }}
+        >
+          <a>Referral</a>
+        </li>
+      )}
+
+      <li>
+        <Link to="/referral-statement">Referral Statement</Link>
       </li>
 
       <li>

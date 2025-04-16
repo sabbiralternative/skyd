@@ -19,6 +19,7 @@ import MyBankDetails from "../pages/MyBankDetails/MyBankDetails";
 import BonusStatement from "../pages/BonusStatement/BonusStatement";
 import ReferralStatement from "../pages/ReferralStatement/ReferralStatement";
 import EventDetails from "../pages/EventDetails/EventDetails";
+import NotFound from "../pages/NotFound/NotFound";
 
 export const router = createBrowserRouter(
   [
@@ -29,6 +30,7 @@ export const router = createBrowserRouter(
           <App />
         </>
       ),
+      errorElement: <NotFound />,
       children: [
         {
           index: true,

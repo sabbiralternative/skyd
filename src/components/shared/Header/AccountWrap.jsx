@@ -3,7 +3,7 @@ import useBalance from "../../../hooks/balance";
 import AccountDropdown from "./AccountDropdown";
 import useCloseModalClickOutside from "../../../hooks/closeModal";
 
-const AccountWrap = () => {
+const AccountWrap = ({ setShowReferral }) => {
   const [showDropdown, setShowDropdown] = useState();
   const { data } = useBalance();
   const ref = useRef();
@@ -63,6 +63,7 @@ const AccountWrap = () => {
         </a>
         {showDropdown && (
           <AccountDropdown
+            setShowReferral={setShowReferral}
             showDropdown={showDropdown}
             setShowDropdown={setShowDropdown}
           />
