@@ -38,7 +38,7 @@ const ApiProvider = ({ children }) => {
         link.href = `${API.assets}/${Settings.siteUrl}/theme.css`;
         document.head.appendChild(link);
       } else {
-        link.href = `/src/static/front/css/theme.css`;
+        link.href = `/src/assets/css/theme.css`;
         document.head.appendChild(link);
       }
       /* Dynamically append site logo  */

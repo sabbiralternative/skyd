@@ -69,7 +69,6 @@ html {
 }
 
 .mszcttz {
-  font-family: "Inter";
   --qluh4n: #eaecf3;
   --6596nj: #f6f7fa;
   --1t345w1: #ffffff;
@@ -279,13 +278,6 @@ button {
   cursor: pointer;
   font-size: 0.875rem;
   background-color: transparent;
-}
-
-button {
-  font-weight: 400;
-  font-family: Inter, -apple-system, Framedcn, Helvetica Neue, Condensed,
-    DisplayRegular, Helvetica, Arial, PingFang SC, Hiragino Sans GB,
-    WenQuanYi Micro Hei, Microsoft Yahei, sans-serif;
 }
 
 button {
@@ -1083,7 +1075,6 @@ a:active:hover {
   --8iybfr: #f6f7fa;
   padding: 10px;
   font-size: 12px;
-  font-family: "Inter";
 }
 
 .s1710wl3 p {
@@ -1741,7 +1732,7 @@ p {
 /*! CSS Used from: https://bc.co/assets/index.page.a3b36959.css */
 .svhk5i1 {
   font-size: 12px;
-  font-family: "Inter";
+
   padding: 10px;
   --15xysm6: #f0f1f5;
   --18uxqd5: #fff;
@@ -2026,7 +2017,6 @@ a:active:hover {
 /* footer start */
 
 .t1b5irhq {
-  font-family: "Inter";
   --ge4i3v: #ffffff;
   --11p5p8q: #eaecf3;
   --5l1a8f: #5f6975;
@@ -2932,7 +2922,7 @@ a:active:hover {
   min-width: 0;
   justify-self: stretch;
   padding: 10px;
-  font-family: "Inter";
+
   font-size: 12px;
 }
 
@@ -4020,7 +4010,7 @@ a:active:hover {
   min-width: 0;
   justify-self: stretch;
   padding: 10px;
-  font-family: "Inter";
+
   font-size: 12px;
 }
 
@@ -5310,7 +5300,6 @@ img,
 }
 
 .login-page .login-box .login-card .login-card-header span {
-  font-family: "Inter";
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
@@ -5335,7 +5324,7 @@ img,
 
 .login-page .login-box .login-card .login-card-header .login-text p {
   color: #000;
-  font-family: "Inter";
+
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
@@ -5386,7 +5375,7 @@ img,
   .btn1
   span {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -5417,7 +5406,7 @@ img,
   button
   span {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -5454,11 +5443,8 @@ img,
   gap: 0.375rem;
   align-self: stretch;
   border-radius: 0.5rem;
-  background: radial-gradient(
-    25% 90% at 50% 50%,
-    var(--color2) 0%,
-    var(--color1) 100%
-  );
+  background: var(--primary-gradient);
+  color: black;
   /* box-shadow: 0 5px 21px #00cf5875; */
   margin: 1.5rem 0rem;
   z-index: 100;
@@ -5472,7 +5458,7 @@ img,
 
 .login-page .login-box .login-card .login-btn span {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -5492,7 +5478,7 @@ img,
 
 .login-page .login-box .mobile-input span {
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -5512,7 +5498,7 @@ img,
 
 .login-page .login-box .mobile-input .password-input span {
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -5531,7 +5517,7 @@ img,
   border: 1px solid var(--greyscale-800, #1f2937);
   background: #f2f2f7;
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -5557,7 +5543,7 @@ img,
 
 .login-page .login-box .mobile-input .password-input-1 span {
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -5576,7 +5562,7 @@ img,
   border: 1px solid #f2f2f7;
   background: #f2f2f7;
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -5613,7 +5599,7 @@ input:-webkit-autofill:active {
 
 .login-page .login-box .mobile-input .input-box input {
   color: #000000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -5652,7 +5638,7 @@ input:-webkit-autofill:active {
   width: 100%;
   color: #000;
   text-align: center;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -5692,7 +5678,7 @@ input:-webkit-autofill:active {
 
 .login-page .login-box .login-box1 .google-login span {
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -5720,7 +5706,7 @@ input:-webkit-autofill:active {
 
 .login-page .login-box .login-box1 .whatsup-login span {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -6957,7 +6943,6 @@ p {
 }
 
 .w1o1zyin {
-  font-family: "Inter";
   font-size: 12px;
   --1oce4tx: #f6f7fa;
   position: fixed;
@@ -12032,7 +12017,6 @@ img,
 }
 
 .amountBox {
-  font-family: "Inter";
   margin-top: 1.38rem;
   display: flex;
   padding: 1rem;
@@ -12046,7 +12030,7 @@ img,
 
 .withdraw_text p {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -12094,8 +12078,6 @@ img,
 }
 
 .deposit_form_input input::placeholder {
-  font-family: "Inter";
-
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -12139,7 +12121,7 @@ img,
 .btn_box span {
   color: #d5d9de;
   text-align: center;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -12182,7 +12164,7 @@ img,
 
 .gift-box > .gift-bonus > .bonus {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.7rem;
   font-style: normal;
   font-weight: 500;
@@ -12194,7 +12176,7 @@ img,
 
 .applied-bonus {
   color: #4ade80;
-  font-family: "Inter";
+
   font-size: 0.7rem;
   font-style: normal;
   font-weight: 500;
@@ -12212,7 +12194,7 @@ img,
 
 .get-btn {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -12237,7 +12219,7 @@ img,
 
 .bonustxt {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -12257,7 +12239,7 @@ img,
 .bounsinnerbox {
   color: #d5d9de;
   text-align: center;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -12287,7 +12269,7 @@ img,
   background-color: var(--color1);
   /* box-shadow: 0 0 5px #2db261; */
   color: #fff;
-  font-family: "Inter";
+
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -12307,7 +12289,7 @@ img,
 .btnn.active {
   opacity: 1;
   border-radius: 0.5rem;
-  background: var(--color1);
+  background: var(--primary-gradient);
   /* box-shadow: 0 5px 21px #00cf5875; */
 }
 
@@ -12344,7 +12326,7 @@ img,
 
 .madepay > button {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -12373,7 +12355,7 @@ img,
 
 .depositbreak > p {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -12419,7 +12401,7 @@ img,
 
 .balancetxt {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -12435,7 +12417,7 @@ img,
 .amt > p {
   color: #040404;
   text-align: center;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -12445,7 +12427,7 @@ img,
 
 .depamt {
   color: #4ade80 !important;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -12463,7 +12445,7 @@ img,
 
 .money {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -12473,7 +12455,7 @@ img,
 .doll {
   color: #040404;
   text-align: center;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -12492,7 +12474,7 @@ img,
 .doll1 {
   color: var(--success-01, #22c55e);
   text-align: center;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -12587,7 +12569,6 @@ img,
 }
 
 .Modal-Background {
-  font-family: "Inter";
   max-width: 768px;
   margin-right: 20px;
   margin: auto;
@@ -12633,7 +12614,7 @@ img,
 
 .ohoo-text {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 500;
@@ -13351,7 +13332,7 @@ img,
 
 .make[_ngcontent-kdb-c159] {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -13409,7 +13390,7 @@ img,
 
 .banknum[_ngcontent-kdb-c159] {
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -13420,7 +13401,7 @@ img,
 
 .accnum[_ngcontent-kdb-c159] {
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -13447,7 +13428,7 @@ img,
 
 .madepay[_ngcontent-kdb-c159] > button[_ngcontent-kdb-c159] {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -13706,7 +13687,6 @@ input {
 }
 
 .utrbox {
-  font-family: "Inter";
   margin: 10px;
   display: flex;
   padding: 1rem;
@@ -14270,7 +14250,7 @@ img,
 
 .user-name-icon-profile .user-name-text {
   margin-left: 12px;
-  font-family: "Inter";
+
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -14309,7 +14289,7 @@ img,
   .card-profile-page-upper-div-left
   .card-profile-page-upper-div-left-balance {
   color: var(--success-03, #86efac);
-  font-family: "Inter";
+
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
@@ -14322,7 +14302,7 @@ img,
   .card-profile-page-upper-div-left
   .card-profile-page-upper-div-left-main-wallet {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
@@ -14376,7 +14356,7 @@ img,
   .card-profile-image-lower-div-left-text
   .text-left-profile {
   color: var(--greyscale-300, #040404);
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -14400,7 +14380,7 @@ img,
   .card-profile-image-lower-div-left
   .card-profile-image-lower-div-left-amount {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
@@ -14432,7 +14412,7 @@ img,
   .card-profile-image-lower-div-right
   .card-profile-image-lower-div-left-text {
   color: var(--greyscale-300, #040404);
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -14445,7 +14425,7 @@ img,
   .card-profile-image-lower-div-right
   .card-profile-image-lower-div-left-amount {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
@@ -14457,7 +14437,7 @@ img,
   .card-profile-image-lower-div
   .card-profile-image-lower-div-left-text {
   color: var(--greyscale-300, #040404);
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -14469,7 +14449,7 @@ img,
   .card-profile-image-lower-div
   .card-profile-image-lower-div-left-amount {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
@@ -14520,7 +14500,7 @@ img,
   .button-container-profile-page-1
   .button-container-profile-page-1-text {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -14559,7 +14539,7 @@ img,
   .button-container-profile-page-2
   .button-container-profile-page-2-text {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -14633,7 +14613,7 @@ img,
   .profile-menu-items-left
   .profile-menu-left-text {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -14680,7 +14660,7 @@ img,
 .logout-btn > span {
   color: #fff;
   text-align: center;
-  font-family: "Inter";
+
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -14713,7 +14693,7 @@ img,
 
 .text > span {
   color: #617293;
-  font-family: "Inter";
+
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
@@ -14723,7 +14703,7 @@ img,
 
 .text > small {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -14759,7 +14739,7 @@ img,
 
 .e-p-body-bc {
   margin: 10px;
-  font-family: "Inter";
+
   flex: auto;
   height: 100%;
   overflow: hidden;
@@ -15003,7 +14983,6 @@ img,
 }
 
 .register-card-header > span {
-  font-family: "Inter";
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
@@ -15020,7 +14999,7 @@ img,
 
 .register-text > p {
   color: #000;
-  font-family: "Inter";
+
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
@@ -15054,7 +15033,7 @@ img,
 
 .whatsup-card > span {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -15077,7 +15056,7 @@ form {
 
 .mobile-input > span {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -15113,7 +15092,7 @@ form {
 
 .input-box span {
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -15123,7 +15102,7 @@ form {
 
 .input-box > input {
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -15134,7 +15113,7 @@ form {
 
 .drp-btn {
   color: #d5d9de;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -15153,7 +15132,7 @@ form {
 
 .terms > span {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.625rem;
   font-style: normal;
   font-weight: 400;
@@ -15203,7 +15182,7 @@ form {
 
 .otp-btn > span {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -15240,7 +15219,7 @@ form {
   width: 100%;
   color: #d5d9de;
   text-align: center;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -15277,7 +15256,7 @@ form {
 
 .google-login > span {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -15305,7 +15284,7 @@ form {
 
 .whatsup-login > span {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -15641,7 +15620,7 @@ form {
 
 .e-p-section-item-bc2[_ngcontent-qsc-c102] > span[_ngcontent-qsc-c102] {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -15742,7 +15721,7 @@ form {
   span[_ngcontent-qsc-c102] {
   width: 7.5rem;
   color: #fff;
-  font-family: "Inter";
+
   font-size: 0.9rem;
   font-style: normal;
   font-weight: 500;
@@ -15761,7 +15740,7 @@ form {
 
 .drp-btn {
   color: #d5d9de;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -15793,7 +15772,7 @@ form {
 
 .otp-input-box > span {
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -15825,7 +15804,7 @@ form {
 
 .input-boxes > input::placeholder {
   color: #d5d9de;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -15837,7 +15816,7 @@ form {
   align-self: stretch;
   color: var(--success-01, #22c55e) !important;
   text-align: right;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -15874,7 +15853,7 @@ form {
 
 .submit-btn > span {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -15966,7 +15945,6 @@ form {
 .pwd-box > .pwd-text {
   margin-top: 0.38rem;
 
-  font-family: "Inter";
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -15990,7 +15968,7 @@ form {
 
 .pwd-box > input::placeholder {
   color: #000;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -16038,7 +16016,6 @@ form {
 }
 
 .bt12496 {
-  font-family: "Inter";
   margin: 0 0 16px;
   padding-left: 16px;
 }
@@ -16057,7 +16034,6 @@ form {
 .bt12499 {
   clear: both;
   margin: 0 10px;
-  font-family: "Inter";
 }
 
 .bt12499:not(:empty) {
@@ -16574,7 +16550,6 @@ form {
 }
 
 .bt12577 {
-  font-family: "Inter";
   margin: 0px 10px;
   width: calc(100% - 20px);
   color: #31373d;
@@ -17262,7 +17237,6 @@ form {
 .bt12498 {
   clear: left;
   margin: 0 10px;
-  font-family: "Inter";
 }
 
 .bt12500 {
@@ -18310,7 +18284,7 @@ form {
 .edit-stake-head {
   z-index: 100;
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -18337,7 +18311,7 @@ form {
 
   background: #ebedf4;
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -18699,7 +18673,7 @@ button {
 
 .deposit_form_input input::placeholder {
   color: #6b7280;
-  font-family: "Inter";
+
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -18807,7 +18781,7 @@ button {
   top: 0;
   left: 0;
   color: #040404;
-  font-family: "Inter";
+
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
@@ -18826,7 +18800,7 @@ button {
 
 .wallet-txt > p {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -18847,7 +18821,7 @@ button {
 .with-any > p {
   color: var(--success-01, #22c55e);
   text-align: center;
-  font-family: "Inter";
+
   font-size: 0.625rem;
   font-style: normal;
   font-weight: 600;
@@ -18883,7 +18857,7 @@ button {
 .money-text > p {
   flex: 1 0 0;
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -18894,7 +18868,7 @@ button {
 .money-bal {
   color: #040404;
   text-align: end;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -18940,7 +18914,7 @@ button {
 
 .wallet-msg > p {
   color: #ffe9e9;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -18962,7 +18936,7 @@ button {
 
 .amount-text {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -18983,10 +18957,10 @@ button {
   border-radius: 0.5rem;
   opacity: 0.5;
   width: 100%;
-  background-color: var(--color1);
+  background-color: var(--primary-gradient);
   /* box-shadow: 0 0 5px var(--color2); */
   color: #fff;
-  font-family: "Inter";
+
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -19072,7 +19046,6 @@ button {
 }
 
 .cdk-overlay-container {
-  font-family: "Inter";
   position: fixed;
   z-index: 5000;
 }
@@ -19161,7 +19134,7 @@ button .mat-mdc-button-touch-target {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color1);
+  background: var(--primary-gradient);
 }
 
 .mat-mdc-dialog-container.mdc-dialog .modal-header h2 {
@@ -19912,7 +19885,7 @@ img,
 
 .plus-btn > span {
   color: #d5d9de;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -19930,7 +19903,7 @@ img,
   gap: 0.375rem;
   opacity: 0.7;
   border-radius: 0.5rem;
-  background: var(--color1);
+  background: var(--primary-gradient);
 }
 
 .process-btn:enabled {
@@ -19945,7 +19918,7 @@ img,
 
 .process-btn > span {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -20552,7 +20525,7 @@ img,
   gap: 0.375rem;
   align-self: stretch;
   color: var(--greyscale-300, #040404);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -20602,7 +20575,7 @@ img,
   align-self: stretch;
   border-radius: 0.5rem;
   opacity: 0.7;
-  background: var(--color1);
+  background: var(--primary-gradient);
 }
 
 .add-btn:enabled {
@@ -20612,7 +20585,7 @@ img,
 
 .cancel-btn > span {
   color: #d5d9de;
-  font-family: "Inter";
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -20621,7 +20594,7 @@ img,
 
 .add-btn > span {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -20651,7 +20624,7 @@ img,
 .card-header > h2 {
   margin-bottom: 0;
   color: #040404;
-  font-family: "Inter";
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -20706,7 +20679,7 @@ img,
   gap: 0.375rem;
   align-self: stretch;
   color: var(--greyscale-300, #040404);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -20805,7 +20778,7 @@ img,
 .logo > p {
   color: #040404;
   text-align: center;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -20826,7 +20799,7 @@ img,
   border-radius: 0rem 0.75rem 0.75rem 0rem;
   background: rgba(255, 255, 255, 0);
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -21366,7 +21339,7 @@ div {
 .remove-text {
   margin-top: 1rem;
   color: #bbbbbb;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -21400,7 +21373,7 @@ div {
 
 .cancel-btnn > span {
   color: #d5d9de;
-  font-family: "Inter";
+
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -21423,7 +21396,7 @@ div {
 
 .confirm-btnn > span {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -21699,7 +21672,7 @@ img,
 .bank-card > p {
   color: #040404;
   text-align: center;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -21719,7 +21692,7 @@ img,
 
 .bank-card > button > span {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -22320,7 +22293,7 @@ img,
 
 .withdraw-amount > span {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -22342,7 +22315,7 @@ img,
     rgba(10, 116, 58, 0.1) 100%
   );
   color: #040404;
-  font-family: "Inter";
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -22360,7 +22333,7 @@ img,
 
 .bank-account > span {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -22389,7 +22362,7 @@ img,
 
 .proceed-btn > span {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -22991,7 +22964,7 @@ div {
 
 .madepay > button {
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -23067,7 +23040,7 @@ div {
 .card-header > h2 {
   margin-bottom: 0;
   color: var(--white, #fff);
-  font-family: "Inter";
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -23158,7 +23131,6 @@ div {
 .deposit-withdraw-btns .btnBox .btn-inactive span {
   color: #040404;
 
-  font-family: "Inter";
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
@@ -23188,7 +23160,7 @@ div {
   align-items: center;
   gap: 0.25rem;
   border-radius: 0.5rem;
-  background: linear-gradient(92deg, var(--color1) 1.85%, var(--color2) 100%);
+  background: var(--primary-gradient);
   z-index: 0;
   animation: right-to-left 0.5s ease-in-out forwards;
 }
@@ -23206,7 +23178,7 @@ div {
   align-items: center;
   gap: 0.25rem;
   border-radius: 0.5rem;
-  background: linear-gradient(92deg, var(--color1) 1.85%, var(--color2) 100%);
+  background: var(--primary-gradient);
   z-index: 0;
   animation: left-to-right 0.5s ease-in-out forwards;
 }
@@ -23378,7 +23350,7 @@ img,
 
 .main-content .date-separator {
   color: #929eb5;
-  font-family: "Inter";
+
   font-size: 11px;
   font-style: normal;
   font-weight: 500;
@@ -23443,7 +23415,7 @@ img,
 
 .main-content .card-deposit .card-content .top-content .left-top-text span {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -23469,7 +23441,6 @@ img,
   .left-top-text
   .status
   .status-text {
-  font-family: "Inter";
   font-size: 0.5rem;
   font-style: normal;
   font-weight: 500;
@@ -23506,7 +23477,7 @@ img,
 
 .main-content .card-deposit .card-content .top-content .right-top-amount {
   color: #37c1fd;
-  font-family: "Inter";
+
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -23531,7 +23502,7 @@ img,
 
 .main-content .card-deposit .card-content .bottom-content .left-bottom-id {
   color: #909090;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -23540,7 +23511,7 @@ img,
 
 .main-content .card-deposit .card-content .bottom-content .right-bottom-date {
   color: #909090;
-  font-family: "Inter";
+
   font-size: 0.625rem;
   font-style: normal;
   font-weight: 400;
@@ -23554,7 +23525,7 @@ img,
 
   .main-content .card-deposit .card-content .top-content .left-top-text span {
     color: #fff;
-    font-family: "Inter";
+
     font-size: 0.6rem;
     font-style: normal;
     font-weight: 300;
@@ -23585,7 +23556,6 @@ img,
     .left-top-text
     .status
     .status-text {
-    font-family: "Inter";
     font-size: 0.6rem;
     font-style: normal;
     font-weight: 300;
@@ -23621,7 +23591,7 @@ img,
 
   .main-content .card-deposit .card-content .top-content .right-top-amount {
     color: #37c1fd;
-    font-family: "Inter";
+
     font-size: 0.6rem;
     font-style: normal;
     font-weight: 400;
@@ -23647,7 +23617,7 @@ img,
   .main-content .card-deposit .card-content .bottom-content .left-bottom-id,
   .main-content .card-deposit .card-content .bottom-content .right-bottom-date {
     color: #929eb5;
-    font-family: "Inter";
+
     font-size: 0.6rem;
     font-style: normal;
     font-weight: 300;
@@ -23818,7 +23788,6 @@ img,
 }
 
 .deposit-details-card .deposit_card .card-head .card-head-left {
-  font-family: "Inter";
   font-weight: 400;
   color: #040404;
   font-size: 12px;
@@ -23828,7 +23797,6 @@ img,
 }
 
 .deposit-details-card .deposit_card .card-head .card-head-right {
-  font-family: "Inter";
   font-weight: 400;
   color: #040404;
   font-size: 12px;
@@ -23920,7 +23888,6 @@ img,
 }
 
 .deposit-details-card .deposit_card .box1 .box1-top .text .top {
-  font-family: "Inter";
   font-weight: 400;
   color: #8b8b8b;
   font-size: 11px;
@@ -23932,7 +23899,7 @@ img,
 .deposit-details-card .deposit_card .box1 .box1-top .text .bottom {
   margin-top: 0.19rem;
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.6875rem;
   font-style: normal;
   font-weight: 400;
@@ -23973,7 +23940,7 @@ img,
   .box1-bottom-left
   .bottom-left {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -23988,7 +23955,7 @@ img,
   .box1-bottom-left
   .bottom-right {
   color: var(--warning-normal, #ff9d00);
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
@@ -24018,7 +23985,7 @@ img,
   .box1-bottom-right
   .text {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
@@ -24046,7 +24013,7 @@ img,
   .status
   span {
   color: #00b2ff;
-  font-family: "Inter";
+
   font-size: 0.625rem;
   font-style: normal;
   font-weight: 500;
@@ -24098,7 +24065,7 @@ img,
 
 .deposit-details-card .deposit_card .box2 .info .left {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -24107,7 +24074,7 @@ img,
 
 .deposit-details-card .deposit_card .box2 .info .right {
   color: #040404;
-  font-family: "Inter";
+
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -24337,7 +24304,6 @@ img,
   font-size: 10px;
   margin: 0;
   line-height: normal;
-  font-family: "Inter";
 }
 
 .bet-history-accordion
@@ -24458,7 +24424,6 @@ img,
   font-size: 10px;
   margin: 0;
   line-height: normal;
-  font-family: "Inter";
 }
 
 .bet-history-accordion
@@ -24996,7 +24961,6 @@ p {
   font-size: 10px;
   margin: 0;
   line-height: normal;
-  font-family: "Inter";
 }
 
 .bet-history-accordion
@@ -25213,7 +25177,6 @@ p {
   font-size: 10px;
   margin: 0;
   line-height: normal;
-  font-family: "Inter";
 }
 
 .bet-history-accordion
@@ -25809,7 +25772,7 @@ p {
 
 .android-popup {
   width: 100%;
-  font-family: "Inter";
+
   background: #000c24;
   padding: 16px;
   display: flex;
@@ -25821,7 +25784,6 @@ p {
 }
 
 .android-card {
-  font-family: "Inter";
   display: flex;
   width: 282px;
   align-items: center;
@@ -25861,7 +25823,7 @@ p {
 
 .app-text h2 {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 11px;
   font-style: normal;
   font-weight: 700;
@@ -25871,7 +25833,7 @@ p {
 
 .app-text span {
   color: #6b7280;
-  font-family: "Inter";
+
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -25899,7 +25861,7 @@ p {
 
 .install-btn button {
   color: #fff;
-  font-family: "Inter";
+
   font-size: 12px;
   font-style: normal;
   font-weight: 600;

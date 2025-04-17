@@ -95,7 +95,7 @@
 .btnn.active {
   opacity: 1;
   border-radius: 0.5rem;
-  background: #ffb80d;
+  background: var(--primary-gradient);
   /* box-shadow: 0 5px 21px #00cf5875; */
 }
 
@@ -338,7 +338,7 @@
   align-items: center;
   gap: 0.375rem;
   border-radius: 0.5rem;
-  background: #ffb80d;
+  background: var(--primary-gradient);
   color: white;
   /* box-shadow: 0 5px 21px #00cf5875; */
 }

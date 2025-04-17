@@ -219,7 +219,7 @@ const AddBank = ({ setAddBank, refetchBankData }) => {
                     {timer ? (
                       <div
                         style={{
-                          backgroundColor: "var(--bg-primary)",
+                          backgroundImage: "var(--primary-gradient)",
                           borderRadius: "4px",
                           padding: "6px 0px",
                           width: "80px",
@@ -237,7 +237,7 @@ const AddBank = ({ setAddBank, refetchBankData }) => {
                       <button
                         onClick={getOtp}
                         style={{
-                          backgroundColor: "#ffb80d",
+                          backgroundImage: "var(--primary-gradient)",
                           borderRadius: "4px",
                           padding: "6px 0px",
                           width: "80px",

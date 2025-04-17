@@ -64,10 +64,10 @@ const ReferralStatement = () => {
             <button
               onClick={() => setFetchData(true)}
               style={{
-                backgroundColor: "var(--bg-primary90)",
+                background: "var(--primary-gradient)",
                 border: "none",
                 padding: "10px 20px",
-                color: "white",
+                color: "black",
                 borderRadius: "4px",
                 cursor: "pointer",
                 height: "34px",

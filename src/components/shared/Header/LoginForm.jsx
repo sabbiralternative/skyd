@@ -1,16 +1,19 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useLoginMutation } from "../../../redux/features/auth/authApi";
 import { useForm } from "react-hook-form";
 import { Settings } from "../../../api";
 import { setUser } from "../../../redux/features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { setShowRegisterModal } from "../../../redux/features/global/globalSlice";
+import Register from "../../../pages/Register/Register";
 
 const LoginForm = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [handleLogin] = useLoginMutation();
   const { register, handleSubmit } = useForm();
+  const { showRegisterModal } = useSelector((state) => state.global);
 
   const onSubmit = async ({ username, password }) => {
     const loginData = {
@@ -71,47 +74,50 @@ const LoginForm = () => {
   };
 
   return (
-    <ul className="login-wrap">
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <li className="user error">
-          <input
-            {...register("username", { required: true })}
-            id="loginName"
-            type="text"
-            placeholder="Mobile/Username"
-          />
-        </li>
-        <li>
-          <input
-            id="password"
-            {...register("password", { required: true })}
-            type="password"
-            placeholder="Password"
-          />
-        </li>
-
-        <li>
-          <button type="submit" id="loginBtn" className="btn-login">
-            Login
-          </button>
-        </li>
-        {Settings.demoLogin && (
+    <>
+      {showRegisterModal && <Register />}
+      <ul className="login-wrap">
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <li className="user error">
+            <input
+              {...register("username", { required: true })}
+              id="loginName"
+              type="text"
+              placeholder="Mobile/Username"
+            />
+          </li>
           <li>
-            <button
-              onClick={loginWithDemo}
-              type="button"
-              id="loginBtn"
-              className="btn-login"
-            >
-              Demo
+            <input
+              id="password"
+              {...register("password", { required: true })}
+              type="password"
+              placeholder="Password"
+            />
+          </li>
+
+          <li>
+            <button type="submit" id="loginBtn" className="btn-login">
+              Login
             </button>
           </li>
-        )}
-        <li>
-          <a className="btn-signup">Sign up</a>
-        </li>
-      </form>
-    </ul>
+          {Settings.demoLogin && (
+            <li>
+              <button
+                onClick={loginWithDemo}
+                type="button"
+                id="loginBtn"
+                className="btn-login"
+              >
+                Demo
+              </button>
+            </li>
+          )}
+          <li onClick={() => dispatch(setShowRegisterModal(true))}>
+            <a className="btn-signup">Sign up</a>
+          </li>
+        </form>
+      </ul>
+    </>
   );
 };
 

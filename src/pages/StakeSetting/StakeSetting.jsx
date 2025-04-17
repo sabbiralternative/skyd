@@ -203,7 +203,7 @@ const StakeSetting = () => {
                       </div>
 
                       <button type="submit" className="login-btn">
-                        <span>Update</span>
+                        <span style={{ color: "black" }}>Update</span>
                       </button>
                     </form>
                   </div>

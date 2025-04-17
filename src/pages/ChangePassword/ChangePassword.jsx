@@ -145,7 +145,7 @@ const ChangePassword = () => {
                         </div>
                       </div>
                       <button type="submit" className="login-btn">
-                        <span>Change Password</span>
+                        <span style={{ color: "black" }}>Change Password</span>
                       </button>
                     </form>
                   </div>

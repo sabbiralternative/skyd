@@ -320,14 +320,14 @@ const Bookmaker = ({ data }) => {
                                     "back",
                                     game,
                                     runner,
-                                    runner?.back?.[1]?.price
+                                    runner?.back?.[0]?.price
                                   )
                                 }
                                 id="back_1"
                                 className="select"
                                 style={{ cursor: "pointer" }}
                               >
-                                <a>{runner?.back?.[1]?.price}</a>
+                                <a>{runner?.back?.[0]?.price}</a>
                               </dd>
                             </dl>
                           </td>

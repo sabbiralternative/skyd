@@ -973,7 +973,7 @@ div:where(.swal2-container) div:where(.swal2-actions) {
   width: 30px;
   height: 45px;
   top: 0;
-  background-color: var(--color-bg-primary);
+  background: var(--primary-gradient);
 }
 
 button.btn {

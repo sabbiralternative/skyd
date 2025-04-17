@@ -130,13 +130,15 @@ const Sports = () => {
                                   id="eventInfo"
                                   style={{ cursor: "pointer" }}
                                 >
-                                  {data?.[key]?.inPlay === 1 && (
-                                    <img
-                                      id="playIcon"
-                                      className="icon-in_play"
-                                      src="/images/transparent.gif"
-                                    />
-                                  )}
+                                  <img
+                                    id="playIcon"
+                                    className={`${
+                                      data?.[key]?.inPlay === 1
+                                        ? "icon-in_play"
+                                        : "icon-no_play"
+                                    }  `}
+                                    src="/images/transparent.gif"
+                                  />
 
                                   <a>{data?.[key]?.eventName}</a>
                                   {data?.[key]?.inPlay === 1 && (

@@ -1344,7 +1344,7 @@ td .fancy-info dt,
 .loading img {
   width: 38px;
   height: 22px;
-  background: url(../images/right/loading60.png) repeat-x;
+  background: url(/images/right/loading60.png) repeat-x;
 }
 
 .table01,
@@ -1426,7 +1426,7 @@ td .fancy-info dt,
 .cal-input {
   width: 110px;
   cursor: pointer;
-  background: #fff url(../images/report/btn-cala.png) no-repeat;
+  background: #fff url(/images/report/btn-cala.png) no-repeat;
   background-position: right;
 }
 
@@ -1437,13 +1437,13 @@ td .fancy-info dt,
 .delete {
   width: 17px;
   height: 32px;
-  background: url(../images/right/del.png) no-repeat;
+  background: url(/images/right/del.png) no-repeat;
 }
 
 .btn-close {
   width: 10px;
   height: 10px;
-  background: url(../images/main/close-black.png) no-repeat;
+  background: url(/images/main/close-black.png) no-repeat;
 }
 
 .btn,
@@ -1639,30 +1639,30 @@ table .btn-send {
 }
 
 .icon-time {
-  background: url(../images/main/icon-time.png);
+  background: url(/images/main/icon-time.png);
 }
 
 .icon-live {
-  background: url(../images/main/icon-live.png);
+  background: url(/images/main/icon-live.png);
 }
 
 .icon-irun {
-  background: url(../images/main/icon-irun.png);
+  background: url(/images/main/icon-irun.png);
 }
 
 .icon-predict {
-  background: url(../images/main/icon-chart.png);
+  background: url(/images/main/icon-chart.png);
 }
 
 .icon-cashout {
-  background: url(../images/main/icon-cashout.png);
+  background: url(/images/main/icon-cashout.png);
 }
 
 .icon-in_play {
   margin-right: 5px;
   height: 8px;
   width: 8px;
-  background: url(../images/main/icon-in_play.png);
+  background: url(/images/main/icon-in_play.png);
 }
 
 .menu-list .icon-in_play {
@@ -1678,7 +1678,7 @@ table .btn-send {
   margin-right: 5px;
   height: 8px;
   width: 8px;
-  background: url(../images/main/icon-no_play.png);
+  background: url(/images/main/icon-no_play.png);
 }
 
 .menu-list .icon-no_play {
@@ -2268,7 +2268,7 @@ textarea:focus {
 .tv-wrap .to-expand,
 .matched-wrap .to-expand,
 .slip-wrap .to-expand {
-  background: url(../images/left/expand_btn-lv1.png) no-repeat;
+  background: url(/images/left/expand_btn-lv1.png) no-repeat;
   background-position: right;
 }
 
@@ -2294,7 +2294,7 @@ textarea:focus {
 .close.tv-wrap .to-expand,
 .close.matched-wrap .to-expand,
 .close.slip-wrap .to-expand {
-  background: url(../images/left/expand_btn-lv1.png) no-repeat;
+  background: url(/images/left/expand_btn-lv1.png) no-repeat;
   background-position: right;
 }
 
@@ -2318,7 +2318,7 @@ textarea:focus {
 .tv-wrap .to-expand,
 .matched-wrap .to-expand,
 .slip-wrap .to-expand {
-  background: url(../images/right/expand_btn-lv2.png) no-repeat;
+  background: url(/images/right/expand_btn-lv2.png) no-repeat;
   background-position: right;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
@@ -2334,7 +2334,7 @@ textarea:focus {
 .close.tv-wrap .to-expand,
 .close.matched-wrap .to-expand,
 .close.slip-wrap .to-expand {
-  background: url(../images/right/close_btn-lv2.png) no-repeat;
+  background: url(/images/right/close_btn-lv2.png) no-repeat;
   background-position: right;
 }
 
@@ -2374,7 +2374,7 @@ textarea:focus {
 .game-highlight-wrap .to-expand,
 .game-wrap .to-expand {
   flex: 1;
-  background: url(../images/main/expand_btn-game.png) no-repeat;
+  background: url(/images/main/expand_btn-game.png) no-repeat;
   background-position: right;
 }
 
@@ -2387,21 +2387,21 @@ textarea:focus {
 .close.game-wrap-horse .to-expand,
 .close.game-highlight-wrap .to-expand,
 .close.game-wrap .to-expand {
-  background: url(../images/main/close_btn-game.png) no-repeat;
+  background: url(/images/main/close_btn-game.png) no-repeat;
   background-position: right;
 }
 
 .o_spondemo .game-wrap-horse .to-expand,
 .o_spondemo .game-highlight-wrap .to-expand,
 .o_spondemo .game-wrap .to-expand {
-  background: url(../images/main/expand_btn-game-spdemo.png) no-repeat;
+  background: url(/images/main/expand_btn-game-spdemo.png) no-repeat;
   background-position: right;
 }
 
 .close.game-wrap-horse .to-expand,
 .close.game-highlight-wrap .to-expand,
 .close.game-wrap .to-expand {
-  background: url(../images/main/close_btn-game-spdemo.png) no-repeat;
+  background: url(/images/main/close_btn-game-spdemo.png) no-repeat;
   background-position: right;
 }
 
@@ -2856,7 +2856,7 @@ textarea:focus {
   top: 0;
   height: 16px;
   width: 19px;
-  background: url(../images/main/icon-fancy_inplay.png) no-repeat;
+  background: url(/images/main/icon-fancy_inplay.png) no-repeat;
   border-radius: 3px 0 0 3px;
 }
 
@@ -2951,7 +2951,7 @@ textarea:focus {
   margin: 6px 6px 0 0;
   width: 15px;
   height: 15px;
-  background: url(../images/main/icon-irun.png) no-repeat;
+  background: url(/images/main/icon-irun.png) no-repeat;
 }
 
 .fancy-suspend,
@@ -3005,7 +3005,7 @@ textarea:focus {
 .power-wrap h3 img {
   height: 18px;
   width: 107px;
-  background: url(../images/login/logo-betfair.png) repeat-x;
+  background: url(/images/login/logo-betfair.png) repeat-x;
 }
 
 .power-wrap p {
@@ -3039,7 +3039,7 @@ textarea:focus {
 .power-wrap-b img {
   width: 107px;
   height: 18px;
-  background: url(../images/login/logo-betfair-w.png) no-repeat;
+  background: url(/images/login/logo-betfair-w.png) no-repeat;
 }
 
 .browser-wrap {
@@ -3310,7 +3310,7 @@ textarea:focus {
   position: relative;
   width: 250px;
   height: 100%;
-  background: #737373 url(../images/bg-login_wrap.png) no-repeat;
+  background: #737373 url(/images/bg-login_wrap.png) no-repeat;
   border-radius: 8px 0 0 8px;
 }
 
@@ -3539,7 +3539,7 @@ textarea:focus {
 .account-wrap li .refresh-bar {
   width: 80px;
   height: 10px;
-  background: url(../images/refresh80.gif) no-repeat center;
+  background: url(/images/refresh80.gif) no-repeat center;
   margin-top: 8px;
 }
 
@@ -4110,7 +4110,7 @@ textarea:focus {
   left: 2px;
   width: 18px;
   height: 18px;
-  background: url(../images/top/menu-casino.png) no-repeat;
+  background: url(/images/top/menu-casino.png) no-repeat;
 }
 
 .menu .casino:hover,
@@ -4139,7 +4139,7 @@ textarea:focus {
   left: 0;
   width: 29px;
   height: 29px;
-  background: url(../images/top/menu-tagnew.png) no-repeat;
+  background: url(/images/top/menu-tagnew.png) no-repeat;
 }
 
 .menu .bet-game:after,
@@ -4147,7 +4147,7 @@ textarea:focus {
   left: 5px;
   width: 18px;
   height: 19px;
-  background: url(../images/top/menu-bet.png) no-repeat;
+  background: url(/images/top/menu-bet.png) no-repeat;
 }
 
 .setting-wrap {
@@ -4167,7 +4167,7 @@ textarea:focus {
   width: 21px;
   height: 18 px;
   vertical-align: top;
-  background: url(../images/top/icon-live_logo.png) repeat-x;
+  background: url(/images/top/icon-live_logo.png) repeat-x;
 }
 
 .setting {
@@ -4371,7 +4371,7 @@ textarea:focus {
 .col-edit img {
   height: 9px;
   width: 9px;
-  background: url(../images/top/icon-stake_edit.png) no-repeat;
+  background: url(/images/top/icon-stake_edit.png) no-repeat;
   background-position: right;
 }
 
@@ -4538,7 +4538,7 @@ textarea:focus {
   line-height: 25px;
   border-bottom-width: 0;
   padding-right: 23px;
-  background-image: url(../images/left/icon-manage.png);
+  background-image: url(/images/left/icon-manage.png);
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -4573,7 +4573,7 @@ textarea:focus {
 
 .path li {
   display: inline;
-  background: url(../images/left/bg-path_arrow.png) no-repeat right;
+  background: url(/images/left/bg-path_arrow.png) no-repeat right;
   padding: 4px 13px 5px 6px;
 }
 
@@ -4593,18 +4593,18 @@ textarea:focus {
   z-index: 2;
   width: 36px;
   height: 25px;
-  background: url(../images/left/path-back.png) no-repeat right;
+  background: url(/images/left/path-back.png) no-repeat right;
   display: none;
 }
 
 .path .path-back:hover {
-  background: url(../images/left/path-back_hover.png) no-repeat right;
+  background: url(/images/left/path-back_hover.png) no-repeat right;
 }
 
 .path .path-back.select {
   width: 36px;
   height: 25px;
-  background: url(../images/left/path-back_hover.png) no-repeat right;
+  background: url(/images/left/path-back_hover.png) no-repeat right;
 }
 
 .path-pop {
@@ -4626,7 +4626,7 @@ textarea:focus {
 .path-pop a {
   color: #fff;
   padding: 5px 10px 5px 15px;
-  background: url(../images/left/icon-sub_menu.png) no-repeat;
+  background: url(/images/left/icon-sub_menu.png) no-repeat;
 }
 
 .path-pop:not(:target) {
@@ -4647,7 +4647,7 @@ textarea:focus {
 }
 
 .slip-wrap .slip_set {
-  background: url(../images/right/slip_set.png) no-repeat;
+  background: url(/images/right/slip_set.png) no-repeat;
 }
 
 .full-wrap .slip-wrap {
@@ -4902,7 +4902,7 @@ textarea:focus {
 
 .odd-add .up {
   line-height: 10px;
-  background-image: url(../images/right/num_up.png);
+  background-image: url(/images/right/num_up.png);
   background-repeat: no-repeat;
   height: 9px;
   width: 12px;
@@ -4910,7 +4910,7 @@ textarea:focus {
 
 .odd-add .down {
   line-height: 9px;
-  background-image: url(../images/right/num_down.png);
+  background-image: url(/images/right/num_down.png);
   background-repeat: no-repeat;
   height: 9px;
   width: 12px;
@@ -4921,11 +4921,11 @@ textarea:focus {
 }
 
 .odd-add.disable .up {
-  background-image: url(../images/right/num_up_disable.png);
+  background-image: url(/images/right/num_up_disable.png);
 }
 
 .odd-add.disable .down {
-  background-image: url(../images/right/num_down_disable.png);
+  background-image: url(/images/right/num_down_disable.png);
 }
 
 .tips-popup,
@@ -4974,12 +4974,12 @@ textarea:focus {
 .stake-popup a {
   color: #3b5160;
   line-height: 22px;
-  background: #eee url(../images/bg-btn.gif) repeat-x;
+  background: #eee url(/images/bg-btn.gif) repeat-x;
 }
 
 .stake-popup a:hover {
   text-decoration: none;
-  background: #eee url(../images/bg-btn_hover.gif) repeat-x;
+  background: #eee url(/images/bg-btn_hover.gif) repeat-x;
 }
 
 .stake-popup:not(:target) {
@@ -5076,7 +5076,7 @@ textarea:focus {
 .slip_refresh {
   width: 29px;
   height: 25px;
-  background: url(../images/right/slip_refresh.png) no-repeat;
+  background: url(/images/right/slip_refresh.png) no-repeat;
 }
 
 .slip-sort {
@@ -5208,14 +5208,14 @@ textarea:focus {
   margin-top: -35px;
   margin-left: -40px;
   content: "";
-  background-image: url(../images/right/icon-play_tv.png);
+  background-image: url(/images/right/icon-play_tv.png);
   background-position: no-repeat;
   height: 69px;
   width: 80px;
 }
 
 .tv_popup {
-  background-image: url(../images/right/tv_popup.png);
+  background-image: url(/images/right/tv_popup.png);
   background-repeat: no-repeat;
   height: 25px;
   width: 29px;
@@ -5224,7 +5224,7 @@ textarea:focus {
 .icon-TV {
   margin-right: 5px;
   vertical-align: top;
-  background-image: url(../images/right/icon-tv.png);
+  background-image: url(/images/right/icon-tv.png);
   background-repeat: no-repeat;
   height: 12px;
   width: 14px;
@@ -5281,7 +5281,7 @@ textarea:focus {
 
 html,
 body {
-  background-color: #eee;
+  background-color: var(--body-bg);
 }
 
 .kv-wrap {
@@ -5329,7 +5329,7 @@ body {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background: #000 url(../images/promo/loading.svg) center center no-repeat;
+  background: #000 url(/images/promo/loading.svg) center center no-repeat;
   background-size: 80px;
 }
 
@@ -5480,7 +5480,7 @@ body {
 .upcome-head dt {
   padding-right: 13px;
   margin-right: 5px;
-  background-image: url(../images/main/path_arrow-upcome.png);
+  background-image: url(/images/main/path_arrow-upcome.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -5519,7 +5519,7 @@ body {
   width: auto;
   margin-right: 5px;
   padding-left: 10px;
-  background: url(../images/report/filter_dot.png) no-repeat;
+  background: url(/images/report/filter_dot.png) no-repeat;
 }
 
 .upcome dd:first-of-type {
@@ -5528,7 +5528,7 @@ body {
 }
 
 .game-highlight-wrap h3 {
-  background-color: #ffb80c;
+  background: var(--primary-gradient);
   color: #1e1e1e;
   font-weight: bold;
   padding: 3px 2px 3px 10px;
@@ -5590,7 +5590,7 @@ body {
 .game-highlight-wrap .competition-expand a {
   color: #1e1e1e;
   padding-left: 14px;
-  background: url(../../images/main/expand_btn-game-black.png) 0 0 no-repeat;
+  background: url(..//images/main/expand_btn-game-black.png) 0 0 no-repeat;
 }
 
 .game-highlight-wrap .competition-collapse {
@@ -5603,7 +5603,7 @@ body {
 .game-highlight-wrap .competition-collapse a {
   color: #1e1e1e;
   padding-left: 14px;
-  background: url(../../images/main/close_btn-game-black.png) 0 0 no-repeat;
+  background: url(..//images/main/close_btn-game-black.png) 0 0 no-repeat;
 }
 
 .game-highlight-wrap .slip-head,
@@ -5632,7 +5632,7 @@ body {
 .tab-markets a {
   width: 130px;
   color: #fff;
-  background: url(../images/main/bg-HGtab.png) no-repeat;
+  background: url(/images/main/bg-HGtab.png) no-repeat;
 }
 
 .tab-highlight a.select,
@@ -5640,7 +5640,7 @@ body {
   height: 24px;
   color: #1e1e1e;
   margin-bottom: -2px;
-  background: url(../images/main/bg-HGtab_select.png) no-repeat;
+  background: url(/images/main/bg-HGtab_select.png) no-repeat;
 }
 
 .tab-highlight a.select:hover,
@@ -6547,7 +6547,7 @@ body {
   position: absolute;
   top: 100%;
   height: 10px;
-  background-image: url(../../images/support_arrow_w.png);
+  background-image: url(..//images/support_arrow_w.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: initial;
@@ -6773,7 +6773,7 @@ img.support-ig {
 
 .power-wrap-b img {
   opacity: 0.5;
-  background: url(../images/login/logo-betfair.png) no-repeat;
+  background: url(/images/login/logo-betfair.png) no-repeat;
 }
 
 .browser-wrap {
@@ -6784,7 +6784,7 @@ img.support-ig {
   height: 20px;
   width: 50px;
   opacity: 0.5;
-  background: url(../images/login/icon-browser-B.png) no-repeat;
+  background: url(/images/login/icon-browser-B.png) no-repeat;
 }
 
 .power-wrap_forsky {
@@ -6897,7 +6897,7 @@ img.support-ig {
   height: 17px;
   width: 17px;
   margin-right: 2px;
-  background: url(../images/main/icon-news.png) no-repeat;
+  background: url(/images/main/icon-news.png) no-repeat;
 }
 
 .marquee-box h4:after,
@@ -6908,7 +6908,7 @@ img.support-ig {
   right: -7px;
   top: 0;
   z-index: 2;
-  background-image: url(../images/main/path_arrow_new.png);
+  background-image: url(/images/main/path_arrow_new.png);
   background-repeat: no-repeat;
   width: 7px;
   height: 25px;
@@ -7598,7 +7598,7 @@ hr {
   height: 22px;
   width: 23px;
   margin: 0;
-  background: url(../images/main/icon-refresh.png) no-repeat content-box;
+  background: url(/images/main/icon-refresh.png) no-repeat content-box;
 }
 
 .game-team .game-visit,
@@ -7613,7 +7613,7 @@ hr {
   right: 0;
   height: 38px;
   width: 26px;
-  background: url(../images/main/bg-visit.png) no-repeat;
+  background: url(/images/main/bg-visit.png) no-repeat;
 }
 
 .game-team .game-home,
@@ -7628,7 +7628,7 @@ hr {
   left: 0;
   height: 38px;
   width: 26px;
-  background: url(../images/main/bg-home.png) no-repeat;
+  background: url(/images/main/bg-home.png) no-repeat;
 }
 
 .game-team .game-vs,
@@ -7728,7 +7728,7 @@ hr {
   list-style: none;
   margin-right: 5px;
   padding-left: 10px;
-  background: url(../images/report/filter_dot.png) no-repeat;
+  background: url(/images/report/filter_dot.png) no-repeat;
 }
 
 .game-scores .scores-time li.finished {
@@ -7784,7 +7784,7 @@ hr {
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
   border-width: 0;
-  background: url(../images/main/soccer-box.png) no-repeat;
+  background: url(/images/main/soccer-box.png) no-repeat;
 }
 
 .game-scores ul .scores-box p {
@@ -7806,7 +7806,7 @@ hr {
 
 .its_turn {
   vertical-align: middle;
-  background-image: url(../images/main/icon-its_turn.png);
+  background-image: url(/images/main/icon-its_turn.png);
   background-repeat: no-repeat;
   background-position: right;
   height: 22px;
@@ -7833,7 +7833,7 @@ hr {
   height: 6px;
   margin: 0 15px;
   border-radius: 3px;
-  background-image: url(../images/bg/bg-progress.png);
+  background-image: url(/images/bg/bg-progress.png);
   background-repeat: repeat-x;
 }
 
@@ -7849,20 +7849,20 @@ hr {
   position: absolute;
   height: 6px;
   border-radius: 3px;
-  background-image: url(../images/bg/bg-progress-now.png);
+  background-image: url(/images/bg/bg-progress-now.png);
   background-repeat: repeat-x;
 }
 
 .icon-card-yellow {
-  background: url(../images/main/icon-card-yellow.png) no-repeat;
+  background: url(/images/main/icon-card-yellow.png) no-repeat;
 }
 
 .icon-card-red {
-  background: url(../images/main/icon-card-red.png) no-repeat;
+  background: url(/images/main/icon-card-red.png) no-repeat;
 }
 
 .icon-soccer {
-  background: url(../images/main/icon-soccer.png) no-repeat;
+  background: url(/images/main/icon-soccer.png) no-repeat;
 }
 
 .sum-status {
@@ -7909,7 +7909,7 @@ hr {
   position: absolute;
   top: -8px;
   margin-left: -10px;
-  background-image: url(../images/main/arrow-score_pop.png);
+  background-image: url(/images/main/arrow-score_pop.png);
   background-repeat: no-repeat;
   height: 8px;
   width: 19px;
@@ -7954,7 +7954,7 @@ hr {
   color: #243a48;
   font-weight: bold;
   padding-left: 10px;
-  background-image: url(../images/bg/bg-scroe_event.png);
+  background-image: url(/images/bg/bg-scroe_event.png);
   background-repeat: repeat-x;
 }
 
@@ -7964,7 +7964,7 @@ hr {
   vertical-align: top;
   height: 29px;
   width: 18px;
-  background-image: url(../images/main/img-scroe_event.png);
+  background-image: url(/images/main/img-scroe_event.png);
   background-repeat: no-repeat;
 }
 
@@ -8049,7 +8049,7 @@ hr {
 .match-odds img {
   vertical-align: top;
   background-repeat: no-repeat;
-  background-image: url(../images/main/img-match_odds.png);
+  background-image: url(/images/main/img-match_odds.png);
   background-repeat: no-repeat;
   height: 30px;
   width: 20px;
@@ -8058,7 +8058,7 @@ hr {
 .tab-HS {
   line-height: 31px;
   height: 32px;
-  background-image: url(../images/bg/bg-tab-HS.png);
+  background-image: url(/images/bg/bg-tab-HS.png);
   background-repeat: repeat-x;
   background-position: initial;
 }
@@ -8084,13 +8084,13 @@ hr {
 .tab-HS .more_drop {
   width: 75px;
   padding-right: 30px;
-  background-image: url(../images/main/more_drop.png);
+  background-image: url(/images/main/more_drop.png);
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .tab-HS .more_drop.select {
-  background-image: url(../images/main/more_drop-hover.png);
+  background-image: url(/images/main/more_drop-hover.png);
 }
 
 .more_drop-list {
@@ -8196,7 +8196,7 @@ hr {
   content: "";
   vertical-align: middle;
   margin-right: 5px;
-  background-image: url(../images/main/icon-live_logo-s.png);
+  background-image: url(/images/main/icon-live_logo-s.png);
   background-repeat: no-repeat;
   height: 15px;
   width: 18px;
@@ -8212,7 +8212,7 @@ hr {
 }
 
 .open-tv-wrap.close_tv:before {
-  background-image: url(../images/main/icon-live_logo-s-open.png);
+  background-image: url(/images/main/icon-live_logo-s-open.png);
 }
 
 .open-tv-wrap.close_tv:hover {
@@ -8826,7 +8826,7 @@ hr {
 .bets .back-all,
 .bets-HS .back-all,
 .bets-GH .back-all {
-  background-image: url(../images/main/bg-backall-left.png);
+  background-image: url(/images/main/bg-backall-left.png);
   background-repeat: no-repeat;
   background-position: initial;
 }
@@ -8835,28 +8835,28 @@ hr {
 .bets-HS .back-all img,
 .bets-GH .back-all img {
   left: 11px;
-  background-image: url(../images/bg/bg-backall.png);
+  background-image: url(/images/bg/bg-backall.png);
   background-repeat: repeat-x;
 }
 
 .bets .back-all:hover,
 .bets-HS .back-all:hover,
 .bets-GH .back-all:hover {
-  background-image: url(../images/main/bg-backall-left_hover.png);
+  background-image: url(/images/main/bg-backall-left_hover.png);
   background-position: initial;
 }
 
 .bets .back-all:hover img,
 .bets-HS .back-all:hover img,
 .bets-GH .back-all:hover img {
-  background-image: url(../images/bg/bg-backall_hover.png);
+  background-image: url(/images/bg/bg-backall_hover.png);
   background-repeat: repeat-x;
 }
 
 .bets .lay-all,
 .bets-HS .lay-all,
 .bets-GH .lay-all {
-  background-image: url(../images/main/bg-layall-right.png);
+  background-image: url(/images/main/bg-layall-right.png);
   background-position: right top;
 }
 
@@ -8864,7 +8864,7 @@ hr {
 .bets-HS .lay-all img,
 .bets-GH .lay-all img {
   right: 11px;
-  background-image: url(../images/bg/bg-layall.png);
+  background-image: url(/images/bg/bg-layall.png);
   background-repeat: repeat-x;
   background-position: initial;
 }
@@ -8872,14 +8872,14 @@ hr {
 .bets .lay-all:hover,
 .bets-HS .lay-all:hover,
 .bets-GH .lay-all:hover {
-  background-image: url(../images/main/bg-layall-right_hover.png);
+  background-image: url(/images/main/bg-layall-right_hover.png);
   background-position: right top;
 }
 
 .bets .lay-all:hover img,
 .bets-HS .lay-all:hover img,
 .bets-GH .lay-all:hover img {
-  background-image: url(../images/bg/bg-layall_hover.png);
+  background-image: url(/images/bg/bg-layall_hover.png);
   background-repeat: repeat-x;
   background-position: initial;
 }
@@ -8942,7 +8942,7 @@ hr {
   position: absolute;
   top: 0;
   right: 2px;
-  background: url(../images/main/btn-fancy_info.png) no-repeat;
+  background: url(/images/main/btn-fancy_info.png) no-repeat;
 }
 
 .bets .special_bet .fancy-info,
@@ -8967,34 +8967,34 @@ hr {
 .bets.disable .back-all,
 .disable.bets-HS .back-all,
 .disable.bets-GH .back-all {
-  background-image: url(../images/main/bg-backall-left_disable.png);
+  background-image: url(/images/main/bg-backall-left_disable.png);
 }
 
 .bets.disable .back-all img,
 .disable.bets-HS .back-all img,
 .disable.bets-GH .back-all img {
-  background-image: url(../images/bg/bg-disableall.png);
+  background-image: url(/images/bg/bg-disableall.png);
   background-repeat: repeat-x;
 }
 
 .bets.disable .lay-all,
 .disable.bets-HS .lay-all,
 .disable.bets-GH .lay-all {
-  background-image: url(../images/main/bg-layall-right_disable.png);
+  background-image: url(/images/main/bg-layall-right_disable.png);
   background-position: right top;
 }
 
 .bets.disable .lay-all img,
 .disable.bets-HS .lay-all img,
 .disable.bets-GH .lay-all img {
-  background-image: url(../images/bg/bg-disableall.png);
+  background-image: url(/images/bg/bg-disableall.png);
   background-repeat: repeat-x;
 }
 
 .bets .to-expand,
 .bets-HS .to-expand,
 .bets-GH .to-expand {
-  background: url(../images/main/expand_btn-game.png) no-repeat;
+  background: url(/images/main/expand_btn-game.png) no-repeat;
   background-position: right;
 }
 
@@ -9027,7 +9027,7 @@ hr {
 .bets.close .to-expand,
 .close.bets-HS .to-expand,
 .close.bets-GH .to-expand {
-  background: url(../images/main/close_btn-game.png) no-repeat;
+  background: url(/images/main/close_btn-game.png) no-repeat;
   background-position: right;
 }
 
@@ -9054,39 +9054,39 @@ hr {
   content: "";
   position: absolute;
   top: 0;
-  background: rgba(51, 51, 51, 0.2) url(../images/bg-disabled.png);
+  background: rgba(51, 51, 51, 0.2) url(/images/bg-disabled.png);
   width: 100%;
   height: 100%;
 }
 
 .disabled td a {
   cursor: not-allowed;
-  background: rgba(51, 51, 51, 0.2) url(../images/bg-disabled.png);
+  background: rgba(51, 51, 51, 0.2) url(/images/bg-disabled.png);
 }
 
 .disabled .back-all,
 .disabled .back-all:hover {
   cursor: not-allowed;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url(../images/main/bg-backall-left-disabled.png);
+  background-image: url(/images/main/bg-backall-left-disabled.png);
 }
 
 .disabled .back-all img,
 .disabled .back-all:hover img {
-  background: url(../images/bg-backall-disabled.png);
+  background: url(/images/bg-backall-disabled.png);
 }
 
 .disabled .lay-all,
 .disabled .lay-all:hover {
   cursor: not-allowed;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url(../images/main/bg-layall-right-disabled.png);
+  background-image: url(/images/main/bg-layall-right-disabled.png);
   background-position: right top;
 }
 
 .disabled .lay-all img,
 .disabled .lay-all:hover img {
-  background-image: url(../images/bg-layall-disabled.png);
+  background-image: url(/images/bg-layall-disabled.png);
   background-position: right top;
 }
 
@@ -9370,7 +9370,7 @@ hr {
 .more {
   line-height: 24px;
   padding-right: 20px;
-  background-image: url(../images/main/icon-arrow_R.png);
+  background-image: url(/images/main/icon-arrow_R.png);
   background-repeat: no-repeat;
   background-position: right 0;
 }
@@ -9506,29 +9506,29 @@ td .suspend {
 
 .line_markets-team {
   background-repeat: repeat-x;
-  background-image: url(../images/bg/bg-line_market-team.png);
+  background-image: url(/images/bg/bg-line_market-team.png);
 }
 
 .line_markets-team .game-visit span {
-  background-image: url(../images/main/bg-line_market-visit.png);
+  background-image: url(/images/main/bg-line_market-visit.png);
   background-repeat: no-repeat;
 }
 
 .line_markets-team .game-home span {
-  background-image: url(../images/main/bg-line_market-home.png);
+  background-image: url(/images/main/bg-line_market-home.png);
   background-repeat: no-repeat;
 }
 
 .line_markets-team .game-vs div {
   position: relative;
-  background-image: url(../images/bg/bg-line_market-vs.png);
+  background-image: url(/images/bg/bg-line_market-vs.png);
   background-repeat: repeat-x;
 }
 
 .line_markets-team .game-vs div:before {
   position: absolute;
   content: "";
-  background-image: url(../images/main/bg-line_market-vs-L.png);
+  background-image: url(/images/main/bg-line_market-vs-L.png);
   background-repeat: repeat-x;
   height: 34px;
   width: 20px;
@@ -9539,7 +9539,7 @@ td .suspend {
   top: 0;
   right: 0;
   content: "";
-  background-image: url(../images/main/bg-line_market-vs-R.png);
+  background-image: url(/images/main/bg-line_market-vs-R.png);
   background-repeat: repeat-x;
   height: 34px;
   width: 20px;
@@ -9561,7 +9561,7 @@ td .suspend {
 
 .btn-rules img {
   margin-right: 5px;
-  background: url(../images/main/icon-rules.png) no-repeat;
+  background: url(/images/main/icon-rules.png) no-repeat;
   height: 9px;
   width: 10px;
 }
@@ -9631,7 +9631,7 @@ td .suspend {
   color: #fff;
   line-height: 22px;
   padding-right: 11px;
-  background-image: url(../images/main/bg-line_market-name-R.png);
+  background-image: url(/images/main/bg-line_market-name-R.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -9640,18 +9640,18 @@ td .suspend {
   height: 22px;
   background-repeat: repeat-x;
   padding-left: 5px;
-  background-image: url(../images/bg/bg-line_market-name.png);
+  background-image: url(/images/bg/bg-line_market-name.png);
   background-repeat: repeat-x;
 }
 
 .scores-line {
-  background-image: url(../images/bg/bg-scroe_line.png);
+  background-image: url(/images/bg/bg-scroe_line.png);
   color: #fff;
   background-repeat: repeat-x;
 }
 
 .scores-line img {
-  background-image: url(../images/main/img-scroe_line.png);
+  background-image: url(/images/main/img-scroe_line.png);
   background-repeat: no-repeat;
   height: 29px;
   width: 18px;
@@ -9664,14 +9664,14 @@ td .suspend {
 }
 
 .tab-markets a {
-  background: url(../images/main/bg-tab.png) no-repeat;
+  background: url(/images/main/bg-tab.png) no-repeat;
 }
 
 .tab-markets a.select {
   height: 23px;
   color: #243a48;
   margin-bottom: -1px;
-  background: url(../images/main/bg-tab-select.png) no-repeat;
+  background: url(/images/main/bg-tab-select.png) no-repeat;
 }
 
 .closed-wrap {
@@ -9714,7 +9714,7 @@ td .suspend {
 
 .add-pin,
 .delete-pin {
-  background: url(../images/main/add-pin.png) no-repeat;
+  background: url(/images/main/add-pin.png) no-repeat;
   background-position: right;
   width: 21px;
   height: 21px;
@@ -9722,13 +9722,13 @@ td .suspend {
 
 .add-pin:hover,
 .delete-pin:hover {
-  background: url(../images/main/add-pin-hover.png) no-repeat;
+  background: url(/images/main/add-pin-hover.png) no-repeat;
 }
 
 .col-info .add-pin,
 .col-info .delete-pin {
   padding: 0;
-  background: url(../images/main/add-pin-s.png) no-repeat;
+  background: url(/images/main/add-pin-s.png) no-repeat;
   background-position: right;
   width: 16px;
   height: 21px;
@@ -9736,7 +9736,7 @@ td .suspend {
 
 .col-info .add-pin:hover,
 .col-info .delete-pin:hover {
-  background: url(../images/main/add-pin-s-hover.png) no-repeat;
+  background: url(/images/main/add-pin-s-hover.png) no-repeat;
 }
 
 .game-head .add-pin,
@@ -9753,12 +9753,12 @@ h3 .delete-pin {
   z-index: 1;
   height: 25px;
   width: 29px;
-  background: url(../images/main/btn-add-pin.png) no-repeat;
+  background: url(/images/main/btn-add-pin.png) no-repeat;
 }
 
 h3 .add-pin:hover,
 h3 .delete-pin:hover {
-  background: url(../images/main/btn-add-pin-hover.png) no-repeat;
+  background: url(/images/main/btn-add-pin-hover.png) no-repeat;
 }
 
 h4 .add-pin,
@@ -9767,7 +9767,7 @@ h4 .delete-pin,
 .tc-content h5 .delete-pin {
   border-top: 1px solid #097d8c;
   border-right: 1px solid #097d8c;
-  background-image: url(../images/main/btn-add-pin.png);
+  background-image: url(/images/main/btn-add-pin.png);
   background-repeat: no-repeat;
   height: 25px;
   width: 29px;
@@ -9777,48 +9777,48 @@ h4 .add-pin:hover,
 .tc-content h5 .add-pin:hover,
 h4 .delete-pin:hover,
 .tc-content h5 .delete-pin:hover {
-  background-image: url(../images/main/btn-add-pin-hover.png);
+  background-image: url(/images/main/btn-add-pin-hover.png);
   background-repeat: no-repeat;
 }
 
 .delete-pin {
   width: 21px;
   height: 21px;
-  background: url(../images/main/delete-pin.png) no-repeat;
+  background: url(/images/main/delete-pin.png) no-repeat;
 }
 
 .delete-pin:hover {
-  background: url(../images/main/delete-pin-hover.png) no-repeat;
+  background: url(/images/main/delete-pin-hover.png) no-repeat;
 }
 
 .col-info .delete-pin {
-  background: url(../images/main/delete-pin-s.png) no-repeat;
+  background: url(/images/main/delete-pin-s.png) no-repeat;
 }
 
 .col-info .delete-pin:hover {
-  background: url(../images/main/delete-pin-s-hover.png) no-repeat;
+  background: url(/images/main/delete-pin-s-hover.png) no-repeat;
 }
 
 h3 .delete-pin {
   width: 29px;
   height: 25px;
-  background: url(../images/main/btn-delete-pin.png) no-repeat;
+  background: url(/images/main/btn-delete-pin.png) no-repeat;
   background-position: right;
 }
 
 h3 .delete-pin:hover {
-  background: url(../images/main/btn-delete-pin-hover.png) no-repeat;
+  background: url(/images/main/btn-delete-pin-hover.png) no-repeat;
 }
 
 h4 .delete-pin,
 .tc-content h5 .delete-pin {
-  background: url(../images/main/btn-delete-pin.png) no-repeat;
+  background: url(/images/main/btn-delete-pin.png) no-repeat;
   background-position: right;
 }
 
 h4 .delete-pin:hover,
 .tc-content h5 .delete-pin:hover {
-  background: url(../images/main/btn-delete-pin-hover.png) no-repeat;
+  background: url(/images/main/btn-delete-pin-hover.png) no-repeat;
 }
 
 .multi_h3 {
@@ -9844,7 +9844,7 @@ h4 .delete-pin:hover,
 
 .multi_refresh {
   order: 99;
-  background-image: url(../images/right/slip_refresh.png);
+  background-image: url(/images/right/slip_refresh.png);
   background-repeat: no-repeat;
   width: 29px;
   height: 25px;
@@ -9874,7 +9874,7 @@ h4 .delete-pin:hover,
 .arrow-dialog {
   position: absolute;
   margin-left: 152px;
-  background-image: url(../images/main/arrow-dialog.png);
+  background-image: url(/images/main/arrow-dialog.png);
   background-repeat: no-repeat;
   height: 10px;
   width: 16px;
@@ -9948,7 +9948,7 @@ h4 .delete-pin:hover,
   transform: translateX(-50%);
   width: 414px;
   height: 31px;
-  background: url(../images/main/stake-1click.png);
+  background: url(/images/main/stake-1click.png);
 }
 
 .one_click-stake li {
@@ -10134,22 +10134,22 @@ h4 .delete-pin:hover,
   line-height: 15px;
   height: 15px;
   width: 12px;
-  background: url(../images/main/num_up-big.png) no-repeat;
+  background: url(/images/main/num_up-big.png) no-repeat;
 }
 
 .quick_bet-wrap .odd-add .down {
   line-height: 9px;
   height: 15px;
   width: 12px;
-  background: url(../images/main/num_down-big.png) no-repeat;
+  background: url(/images/main/num_down-big.png) no-repeat;
 }
 
 .quick_bet-wrap .odd-add.disable .up {
-  background: url(../images/main/num_up-big_disable.png) no-repeat;
+  background: url(/images/main/num_up-big_disable.png) no-repeat;
 }
 
 .quick_bet-wrap .odd-add.disable .down {
-  background: url(../images/main/num_down-big_disable.png) no-repeat;
+  background: url(/images/main/num_down-big_disable.png) no-repeat;
 }
 
 .event-left .quick_bet-wrap dt,
@@ -10204,7 +10204,7 @@ h4 .delete-pin:hover,
 
 .edit img {
   margin-left: 2px;
-  background-image: url(../images/main/icon-btn_edit.png);
+  background-image: url(/images/main/icon-btn_edit.png);
   background-repeat: no-repeat;
   width: 9px;
   height: 9px;
@@ -10666,14 +10666,14 @@ h4 .delete-pin:hover,
   left: -11px;
   width: 11px;
   height: 25px;
-  background: url(../images/main/bg-other_tab-L.png) no-repeat;
+  background: url(/images/main/bg-other_tab-L.png) no-repeat;
 }
 
 .other-tab:after {
   right: -11px;
   width: 11px;
   height: 25px;
-  background: url(../images/main/bg-other_tab-R.png) no-repeat;
+  background: url(/images/main/bg-other_tab-R.png) no-repeat;
 }
 
 .other-tab .tag-new {
@@ -10687,7 +10687,7 @@ h4 .delete-pin:hover,
   margin-left: -4px;
   width: 37px;
   height: 25px;
-  background: url(../images/main/btn-fancybet_rules.png) no-repeat;
+  background: url(/images/main/btn-fancybet_rules.png) no-repeat;
 }
 
 .fancy-info {
@@ -11015,7 +11015,7 @@ td .fancy-info dt {
 .sportsbook-head h4 span,
 .sportsbook-head .tc-content h5 span,
 .tc-content .sportsbook-head h5 span {
-  background-image: url(../images/bg/bg-spb_head.png);
+  background-image: url(/images/bg/bg-spb_head.png);
 }
 
 .sportsbook-head .rules-wrap {
@@ -11073,7 +11073,7 @@ td .fancy-info dt {
   content: "";
   width: 18px;
   height: 22px;
-  background-image: url(../../images/icon-download.png);
+  background-image: url(..//images/icon-download.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -11081,7 +11081,7 @@ td .fancy-info dt {
 .download-list .icon-pdf:before {
   width: 24px;
   height: 29px;
-  background-image: url(../../images/icon-pdf.png);
+  background-image: url(..//images/icon-pdf.png);
   margin-right: 10px;
 }
 
@@ -11098,7 +11098,7 @@ td .fancy-info dt {
 }
 
 .btn-sportsbook_rules {
-  background: url(../images/main/btn-spb_rules.png) no-repeat;
+  background: url(/images/main/btn-spb_rules.png) no-repeat;
 }
 
 .btn-h2h {
@@ -12065,7 +12065,7 @@ p.dynamic-min-bet {
 
 .urgent-notice .announce-header {
   padding: 0;
-  background: #121212 url(../images/skyexchange/bg-send-skyEX.png) repeat-x;
+  background: #121212 url(/images/skyexchange/bg-send-skyEX.png) repeat-x;
   border-radius: 8px 8px 0 0;
 }
 
@@ -12274,7 +12274,7 @@ p.dynamic-min-bet {
 }
 
 .mysports247 .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-mysports247.png") center
+  background: url("/images/announcement/popup-header-mysports247.png") center
     no-repeat;
 }
 
@@ -12283,7 +12283,7 @@ p.dynamic-min-bet {
 }
 
 .mazaplay .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-mazaplay.png") center
+  background: url("/images/announcement/popup-header-mazaplay.png") center
     no-repeat;
 }
 
@@ -12292,7 +12292,7 @@ p.dynamic-min-bet {
 }
 
 .skyexchange .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-skyexchange.png") center
+  background: url("/images/announcement/popup-header-skyexchange.png") center
     no-repeat;
 }
 
@@ -12301,7 +12301,7 @@ p.dynamic-min-bet {
 }
 
 .o_spondemo .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-o_spondemo.png") center
+  background: url("/images/announcement/popup-header-o_spondemo.png") center
     no-repeat;
 }
 
@@ -12310,7 +12310,7 @@ p.dynamic-min-bet {
 }
 
 .o_12bet .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-o_12bet.png") center
+  background: url("/images/announcement/popup-header-o_12bet.png") center
     no-repeat;
 }
 
@@ -12319,7 +12319,7 @@ p.dynamic-min-bet {
 }
 
 .o_dafabet .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-o_dafabet.png") center
+  background: url("/images/announcement/popup-header-o_dafabet.png") center
     no-repeat;
 }
 
@@ -12328,7 +12328,7 @@ p.dynamic-min-bet {
 }
 
 .skyinplay .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-skyinplay.png") center
+  background: url("/images/announcement/popup-header-skyinplay.png") center
     no-repeat;
 }
 
@@ -12337,7 +12337,7 @@ p.dynamic-min-bet {
 }
 
 .bigEXch .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-bigEXch.png") center
+  background: url("/images/announcement/popup-header-bigEXch.png") center
     no-repeat;
 }
 
@@ -12346,7 +12346,7 @@ p.dynamic-min-bet {
 }
 
 .masterExc .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-masterExc.png") center
+  background: url("/images/announcement/popup-header-masterExc.png") center
     no-repeat;
 }
 
@@ -12355,7 +12355,7 @@ p.dynamic-min-bet {
 }
 
 .matador .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-matador.png") center
+  background: url("/images/announcement/popup-header-matador.png") center
     no-repeat;
 }
 
@@ -12364,7 +12364,7 @@ p.dynamic-min-bet {
 }
 
 .lucky7 .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-lucky7.png") center
+  background: url("/images/announcement/popup-header-lucky7.png") center
     no-repeat;
 }
 
@@ -12373,7 +12373,7 @@ p.dynamic-min-bet {
 }
 
 .qexch .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-qexch.png") center
+  background: url("/images/announcement/popup-header-qexch.png") center
     no-repeat;
 }
 
@@ -12382,7 +12382,7 @@ p.dynamic-min-bet {
 }
 
 .betmygame .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-betmygame.png") center
+  background: url("/images/announcement/popup-header-betmygame.png") center
     no-repeat;
 }
 
@@ -12391,7 +12391,7 @@ p.dynamic-min-bet {
 }
 
 .fancyfair .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-fancyfair.png") center
+  background: url("/images/announcement/popup-header-fancyfair.png") center
     no-repeat;
 }
 
@@ -12400,7 +12400,7 @@ p.dynamic-min-bet {
 }
 
 .maruti .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-maruti.png") center
+  background: url("/images/announcement/popup-header-maruti.png") center
     no-repeat;
 }
 
@@ -12409,7 +12409,7 @@ p.dynamic-min-bet {
 }
 
 .marutibook .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-marutibook.png") center
+  background: url("/images/announcement/popup-header-marutibook.png") center
     no-repeat;
 }
 
@@ -12418,8 +12418,8 @@ p.dynamic-min-bet {
 }
 
 .skyexchange247 .news-wrap .announce-header {
-  background: url("../images/announcement/popup-header-skyexchange247.png")
-    center no-repeat;
+  background: url("/images/announcement/popup-header-skyexchange247.png") center
+    no-repeat;
 }
 
 .login-policy {
@@ -12578,7 +12578,7 @@ p.dynamic-min-bet {
   width: 101px;
   height: 97px;
   margin-bottom: 20px;
-  background: url(../images/announcement/ic-search.svg) no-repeat;
+  background: url(/images/announcement/ic-search.svg) no-repeat;
 }
 
 .marquee-pop .nofound .nofound_box dd {
@@ -12815,7 +12815,7 @@ p.dynamic-min-bet {
 .close_pop {
   position: absolute;
   right: 15px;
-  background-image: url(../images/agent/close_pop.png);
+  background-image: url(/images/agent/close_pop.png);
   background-repeat: no-repeat;
   height: 16px;
   width: 17px;
@@ -12921,7 +12921,7 @@ textarea.error {
 .go-back img,
 .pop-close img {
   margin-right: 5px;
-  background-image: url(../images/agent/icon-go_back.png);
+  background-image: url(/images/agent/icon-go_back.png);
   background-position: left;
   background-repeat: no-repeat;
   height: 12px;
@@ -12929,7 +12929,7 @@ textarea.error {
 }
 
 .pop-close img {
-  background-image: url(../images/agent/icon-pop_close.png);
+  background-image: url(/images/agent/icon-pop_close.png);
 }
 
 .pop-content {
@@ -13110,7 +13110,7 @@ textarea.error {
   margin-right: 5px;
   color: #243a48;
   padding-left: 10px;
-  background-image: url(../images/report/filter_dot.png);
+  background-image: url(/images/report/filter_dot.png);
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -13152,7 +13152,7 @@ textarea.error {
   vertical-align: middle;
   margin-top: -3px;
   margin-left: 5px;
-  background-image: url(../images/report/btn-comt.png);
+  background-image: url(/images/report/btn-comt.png);
   background-repeat: no-repeat;
   background-position: right;
   height: 23px;
@@ -13160,7 +13160,7 @@ textarea.error {
 }
 
 .filter-list.golf-list .compt:hover img {
-  background-image: url(../images/report/btn-comt-hover.png);
+  background-image: url(/images/report/btn-comt-hover.png);
 }
 
 .filter-pop {
@@ -13218,7 +13218,7 @@ textarea.error {
   text-decoration: none;
   color: #000;
   padding-right: 20px;
-  background-image: url(../images/report/expand-close.png);
+  background-image: url(/images/report/expand-close.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -13315,13 +13315,13 @@ table .expand-open {
   padding-right: 0;
   padding-left: 15px;
   color: #2789ce;
-  background-image: url(../images/report/expand-close.png);
+  background-image: url(/images/report/expand-close.png);
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .expand-open {
-  background-image: url(../images/report/expand-open.png);
+  background-image: url(/images/report/expand-open.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -13368,7 +13368,7 @@ table .expand-open {
 .sportsbook_bet .fancy-quick-tr td .expand-open,
 .bookmaker_bet .td-fancy_merge .expand-open,
 .bookmaker_bet .fancy-quick-tr td .expand-open {
-  background-image: url(../images/report/expand-open.png);
+  background-image: url(/images/report/expand-open.png);
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -13448,7 +13448,7 @@ table .expand-open {
   position: absolute;
   left: 15%;
   margin-left: -10px;
-  background-image: url(../images/report/expand-arrow.png);
+  background-image: url(/images/report/expand-arrow.png);
   height: 9px;
   width: 10px;
 }
@@ -13476,7 +13476,7 @@ table .expand-open {
   position: absolute;
   left: 98%;
   margin-top: -1px;
-  background-image: url(../images/report/expand-arrow-R.png);
+  background-image: url(/images/report/expand-arrow-R.png);
   height: 9px;
   width: 10px;
 }
@@ -13528,12 +13528,12 @@ table .expand-open {
 }
 
 .acc-info .user {
-  background-image: url(../images/report/icon-user.png);
+  background-image: url(/images/report/icon-user.png);
   background-repeat: no-repeat;
 }
 
 .acc-info .time {
-  background-image: url(../images/report/icon-time.png);
+  background-image: url(/images/report/icon-time.png);
   background-repeat: no-repeat;
 }
 
@@ -13603,7 +13603,7 @@ table .expand-open {
 
 .fromto {
   margin: 0 5px;
-  background-image: url(../images/report/icon-fromto.png);
+  background-image: url(/images/report/icon-fromto.png);
   background-repeat: no-repeat;
   height: 8px;
   width: 7px;
@@ -13667,21 +13667,21 @@ table .expand-open {
 .prevMonth {
   width: 27px;
   height: 20px;
-  background-image: url(../images/report/prev_m.png);
+  background-image: url(/images/report/prev_m.png);
 }
 
 .prevMonth:hover {
-  background-image: url(../images/report/prev_m-hover.png);
+  background-image: url(/images/report/prev_m-hover.png);
 }
 
 .nextMonth {
   width: 27px;
   height: 20px;
-  background-image: url(../images/report/mext_m.png);
+  background-image: url(/images/report/mext_m.png);
 }
 
 .nextMonth:hover {
-  background-image: url(../images/report/mext_m-hover.png);
+  background-image: url(/images/report/mext_m-hover.png);
 }
 
 .calendarTable_2 {
@@ -14107,7 +14107,7 @@ table .expand-open {
 
 .trans-replay {
   margin: 0 auto;
-  background-image: url(../images/report/btn-replay.png);
+  background-image: url(/images/report/btn-replay.png);
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
@@ -16221,7 +16221,7 @@ table .expand-open {
   right: 0;
   width: 64px;
   height: 100%;
-  background-color: #ffb80c;
+  background: var(--primary-gradient);
   content: "";
 }
 
@@ -16424,12 +16424,12 @@ table .expand-open {
 }
 
 .header h1 {
-  background-image: url(../images/skyexchange/logo.png);
+  background-image: url(/images/skyexchange/logo.png);
 }
 
 .top {
   background: #000;
-  background-image: linear-gradient(180deg, #383838 0%, #010101 100%);
+  background-image: var(--header-bg);
 }
 
 .login-wrap li.user::before {
@@ -16502,7 +16502,7 @@ table .expand-open {
 .menu-wrap {
   background-color: none;
   background-image: none;
-  background-image: linear-gradient(180deg, #ffcc2e 0%, #ffbd14 100%);
+  background-image: var(--primary-gradient);
 }
 
 .menu-wrap li {
@@ -16611,7 +16611,7 @@ table .expand-open {
 }
 
 .one_click-stake {
-  background: url(../images/main-ds/stake-1click-Yl02.png);
+  background: url(/images/main-ds/stake-1click-Yl02.png);
 }
 
 .one_click-stake .btn.select,
@@ -16703,7 +16703,7 @@ table .expand-open {
 }
 
 .game-highlight-wrap h3 {
-  background-color: #ffb80c;
+  background: var(--primary-gradient);
 }
 
 .game-highlight-wrap .tab-highlight,
@@ -16725,11 +16725,11 @@ table .expand-open {
 }
 
 .login_to_go .kv {
-  background-image: url(../../images/skyexchange/bg-login_wrap.png);
+  background-image: url(/images/skyexchange/bg-login_wrap.png);
 }
 
 .login_to_go .kv:before {
-  background-image: url(../../images/skyexchange/logo.png);
+  background-image: url(..//images/skyexchange/logo.png);
   top: 75%;
 }
 
@@ -16764,7 +16764,7 @@ table .expand-open {
 }
 
 .maintain-footer h1 {
-  background-image: url(../images/skyexchange/logo.png);
+  background-image: url(/images/skyexchange/logo.png);
 }
 
 .header h1 {

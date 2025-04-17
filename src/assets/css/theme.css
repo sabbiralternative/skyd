@@ -1,0 +1,5 @@
+:root {
+  --header-bg: linear-gradient(180deg, #383838 0%, #010101 100%);
+  --body-bg: #eee;
+  --primary-gradient: linear-gradient(180deg, #ffcc2e 0%, #ffbd14 100%);
+}

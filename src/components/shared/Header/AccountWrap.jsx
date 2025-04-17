@@ -26,7 +26,7 @@ const AccountWrap = ({ setShowReferral }) => {
             </li>
           </ul>
 
-          <div className="wallet-detail" id="multiBalancePop">
+          {/* <div className="wallet-detail" id="multiBalancePop">
             <div className="wallet-detail-group">
               <dl className="wallet-detail-content">
                 <dt>Main Balance</dt>
@@ -46,7 +46,7 @@ const AccountWrap = ({ setShowReferral }) => {
             <div className="btn-box">
               <button className="btn">Close</button>
             </div>
-          </div>
+          </div> */}
         </a>
         <a id="menuRefresh" className="a-refresh" title="Refresh Main Wallet">
           <img src="/images/transparent.gif" />
