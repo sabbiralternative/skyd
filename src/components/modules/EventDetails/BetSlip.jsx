@@ -17,6 +17,8 @@ import { v4 as uuidv4 } from "uuid";
 import toast from "react-hot-toast";
 
 const BetSlip = () => {
+  const [progressBar, setProgressBar] = useState(0);
+  const [showMessage, setShowMessage] = useState("");
   const [profit, setProfit] = useState(0);
   const { eventTypeId } = useParams();
   const dispatch = useDispatch();
@@ -28,7 +30,7 @@ const BetSlip = () => {
   const { refetch: refetchExposure } = useExposure(eventId);
   const [betDelay, setBetDelay] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [createOrder] = useOrderMutation();
+  const [createOrder, { data }] = useOrderMutation();
   const buttonValues = localStorage.getItem("buttonValue");
   let parseButtonValues = [];
   if (buttonValues) {
@@ -134,15 +136,19 @@ const BetSlip = () => {
         refetchExposure();
         refetchBalance();
         refetchCurrentBets();
-        setBetDelay("");
-        dispatch(setPlaceBetValues(null));
-        dispatch(setRunnerId(null));
-        toast.success(res?.result?.result?.placed?.[0]?.message);
+        setBetDelay(null);
+        setShowMessage(res?.result?.result?.placed?.[0]?.message);
+        // dispatch(setPlaceBetValues(null));
+        // dispatch(setRunnerId(null));
+        // toast.success(res?.result?.result?.placed?.[0]?.message);
       } else {
         setLoading(false);
-        toast.error(
+        setShowMessage(
           res?.error?.status?.[0]?.description || res?.error?.errorMessage
         );
+        // toast.error(
+        //   res?.error?.status?.[0]?.description || res?.error?.errorMessage
+        // );
         setBetDelay(null);
       }
     }, delay);
@@ -180,89 +186,182 @@ const BetSlip = () => {
     dispatch(setRunnerId(null));
   };
 
+  useEffect(() => {
+    if (betDelay && !showMessage) {
+      setTimeout(() => {
+        setProgressBar((prev) => prev + 20);
+      }, 1000);
+    }
+    if (showMessage) {
+      setTimeout(() => {
+        setShowMessage("");
+        dispatch(setPlaceBetValues(null));
+        dispatch(setRunnerId(null));
+        setProgressBar(0);
+      }, 3000);
+    }
+  }, [showMessage, dispatch, betDelay]);
+
   return (
-    <tr className="fancy-quick-tr" style={{ display: "table-row" }}>
-      <td colSpan={7}>
-        <dl
-          id="classWrap"
-          className={`quick_bet-wrap ${
-            placeBetValues?.back ? "slip-back" : "slip-lay"
-          }`}
+    <>
+      {betDelay && !showMessage && (
+        <tr
+          id="bookMakerBetBar_34241820_266867_786364_1"
+          className="fancy-quick-tr"
         >
-          <dt id="bookMakerBetHeader" className>
-            <span id="bookMakerBetAcceptCheck" className="bet-check">
-              <input id="bookMakerBetAcceptAnyOdds" type="checkbox" />
-              <label htmlFor="bookMakerBetAcceptAnyOdds">Accept Any Odds</label>
-            </span>
-          </dt>
-          <dd className="col-btn">
-            <a
-              onClick={closeBetSlip}
-              id="cancel"
-              className="btn"
-              style={{
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
+          <td colSpan="7">
+            <dl className="quick_bet-wrap quick_bet-progress">
+              <dd
+                id="progressBar"
+                className="progress-bar"
+                style={{ width: `${progressBar}%` }}
+              ></dd>
+              <dd className="progress-bar-txt">
+                Placing your bets, Please wait{" "}
+                <span id="secRemain">{betDelay} sec remaining…</span>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      )}
+      {!betDelay && showMessage && (
+        <tr id="bookMakerBetMessage_34241820_266867" className="fancy-quick-tr">
+          <td colSpan="7">
+            <dl
+              id="classWrap"
+              className={`quick_bet-wrap quick_bet-message ${
+                data?.success ? "success" : "error"
+              }`}
             >
-              Cancel
-            </a>
-          </dd>
-          <dd id="oddsHeader" className="col-odd">
-            <ul className="quick-bet-confirm">
-              <input
-                onChange={(e) => dispatch(setPrice(e.target.value))}
-                id="inputStake"
-                type="text"
-                value={price}
-              />
-            </ul>
-          </dd>
-          <dd className="col-stake">
-            <input
-              onChange={(e) => dispatch(setStake(e.target.value))}
-              type="text"
-              placeholder={`Max Bet: ${placeBetValues?.maxLiabilityPerBet}`}
-              value={stake !== null ? stake : null}
-            />
-          </dd>
-          <dd className="col-send">
-            <a
-              onClick={handleOrderBets}
-              id="placeBet"
-              className={`btn-send ${!stake ? "disable" : ""}`}
-              style={{
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
+              {data?.success ? (
+                <dd id="info">
+                  <strong id="header">Bet Matched</strong>
+                  IR {stake} at odds {placeBetValues?.price} Profit: {profit}
+                  {/* <a
+                    onClick={() => {
+                      dispatch(setPlaceBetValues(null));
+                      dispatch(setRunnerId(null));
+                      setShowMessage("");
+                    }}
+                    id="close"
+                    className="btn-close"
+                    style={{ cursor: "pointer" }}
+                  >
+                    Close
+                  </a> */}
+                </dd>
+              ) : (
+                <dd id="info">
+                  {data?.error?.status?.[0]?.description ||
+                    data?.error?.errorMessage}
+                  {/* <a
+                    onClick={() => {
+                      dispatch(setPlaceBetValues(null));
+                      dispatch(setRunnerId(null));
+                      setShowMessage("");
+                    }}
+                    id="close"
+                    className="btn-close"
+                    style={{ cursor: "pointer" }}
+                  >
+                    Close
+                  </a> */}
+                </dd>
+              )}
+            </dl>
+          </td>
+        </tr>
+      )}
+      {!betDelay && !showMessage && (
+        <tr className="fancy-quick-tr" style={{ display: "table-row" }}>
+          <td colSpan={7}>
+            <dl
+              id="classWrap"
+              className={`quick_bet-wrap ${
+                placeBetValues?.back ? "slip-back" : "slip-lay"
+              }`}
             >
-              Place Bets
-            </a>
-          </dd>
-          <dd
-            id="stakePopupList"
-            className="col-stake_list"
-            style={{ display: "block" }}
-          >
-            <ul>
-              {parseButtonValues?.slice(0, 6)?.map((button, i) => {
-                return (
-                  <li key={i} onClick={() => dispatch(setStake(button?.value))}>
-                    <a className="btn" style={{ cursor: "pointer" }}>
-                      {button?.value}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </dd>
-        </dl>
-      </td>
-    </tr>
+              <dt id="bookMakerBetHeader" className>
+                <span id="bookMakerBetAcceptCheck" className="bet-check">
+                  <input id="bookMakerBetAcceptAnyOdds" type="checkbox" />
+                  <label htmlFor="bookMakerBetAcceptAnyOdds">
+                    Accept Any Odds
+                  </label>
+                </span>
+              </dt>
+              <dd className="col-btn">
+                <a
+                  onClick={closeBetSlip}
+                  id="cancel"
+                  className="btn"
+                  style={{
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  Cancel
+                </a>
+              </dd>
+              <dd id="oddsHeader" className="col-odd">
+                <ul className="quick-bet-confirm">
+                  <input
+                    onChange={(e) => dispatch(setPrice(e.target.value))}
+                    id="inputStake"
+                    type="text"
+                    value={price}
+                  />
+                </ul>
+              </dd>
+              <dd className="col-stake">
+                <input
+                  onChange={(e) => dispatch(setStake(e.target.value))}
+                  type="text"
+                  placeholder={`Max Bet: ${placeBetValues?.maxLiabilityPerBet}`}
+                  value={stake !== null ? stake : null}
+                />
+              </dd>
+              <dd className="col-send">
+                <a
+                  onClick={handleOrderBets}
+                  id="placeBet"
+                  className={`btn-send ${!stake ? "disable" : ""}`}
+                  style={{
+                    cursor: "pointer",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  Place Bets
+                </a>
+              </dd>
+              <dd
+                id="stakePopupList"
+                className="col-stake_list"
+                style={{ display: "block" }}
+              >
+                <ul>
+                  {parseButtonValues?.slice(0, 6)?.map((button, i) => {
+                    return (
+                      <li
+                        key={i}
+                        onClick={() => dispatch(setStake(button?.value))}
+                      >
+                        <a className="btn" style={{ cursor: "pointer" }}>
+                          {button?.value}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      )}
+    </>
   );
 };
 

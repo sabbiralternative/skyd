@@ -274,6 +274,12 @@ const Bookmaker = ({ data }) => {
                     </td>
                   </tr>
                   {game?.runners?.map((runner) => {
+                    const pnl = pnlBySelection?.find(
+                      (pnl) => pnl?.RunnerId === runner?.id
+                    );
+                    const predictOddValues = predictOdd?.find(
+                      (val) => val?.id === runner?.id
+                    );
                     return (
                       <>
                         <tr
@@ -283,6 +289,36 @@ const Bookmaker = ({ data }) => {
                         >
                           <th className="predict">
                             <p id="runnerName">{runner?.name}</p>
+                            {pnl && (
+                              <span
+                                id="before"
+                                className={`${pnl?.pnl > 0 ? "win" : "lose"}`}
+                              >
+                                {pnl?.pnl}
+                              </span>
+                            )}
+
+                            {stake && runnerId && predictOddValues && (
+                              <span
+                                id="after"
+                                className={` ${
+                                  predictOddValues?.exposure > 0
+                                    ? "to-win"
+                                    : "to-lose"
+                                }`}
+                                style={{ display: "display: inline-flex" }}
+                              >
+                                <span
+                                  className={`${
+                                    predictOddValues?.exposure > 0
+                                      ? "green"
+                                      : "red"
+                                  }`}
+                                >
+                                  ( {predictOddValues?.exposure})
+                                </span>
+                              </span>
+                            )}
                           </th>
                           <td className colSpan={3}>
                             <dl className="back-gradient">

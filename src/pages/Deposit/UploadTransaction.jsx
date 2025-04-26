@@ -98,7 +98,6 @@ const UploadTransaction = ({ paymentId, amount }) => {
   const handleUTRChange = (e) => {
     const value = e.target.value;
     if (/^[0-9]*$/.test(value)) {
-      console.log(value);
       setUtr(value);
     }
   };

@@ -7,7 +7,7 @@ const useGetAllMac88 = () => {
     queryKey: ["all-mac-88"],
     queryFn: async () => {
       const res = await AxiosSecure.get(API.mac88All);
-      console.log(res);
+
       const result = res?.data;
       if (result?.success) {
         return result?.result;

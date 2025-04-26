@@ -8,6 +8,7 @@ import {
   setRunnerId,
 } from "../../../redux/features/events/eventSlice";
 import BetSlip from "./BetSlip";
+import Ladder from "../../modals/Ladder";
 
 const Fancy = ({ data }) => {
   const navigate = useNavigate();
@@ -127,6 +128,13 @@ const Fancy = ({ data }) => {
 
   return (
     <>
+      {ladderData?.length > 0 && (
+        <Ladder
+          setLadderData={setLadderData}
+          ladderData={ladderData}
+          marketName={marketName}
+        />
+      )}
       {fancyData?.length > 0 && (
         <div className="bets-wrap fancy_bet">
           <p className="no_bet" style={{ display: "none" }}>
@@ -174,16 +182,46 @@ const Fancy = ({ data }) => {
                 return (
                   <>
                     <tr>
-                      <th colSpan={3}>
-                        <dl className="fancy-th-layout">
+                      <th style={{ height: "auto" }} colSpan={3}>
+                        <dl
+                          className="fancy-th-layout"
+                          style={{ height: "auto" }}
+                        >
                           <dt>
                             <p>{game?.name}</p>
+                            {pnl?.pnl && (
+                              <p
+                                id="before"
+                                className={`${pnl?.pnl > 0 ? "win" : "lose"}`}
+                              >
+                                <span
+                                  className={`${
+                                    pnl?.pnl > 0 ? "green" : "red"
+                                  }`}
+                                >
+                                  ({pnl?.pnl})
+                                </span>
+                              </p>
+                            )}
                           </dt>
+                          {pnl?.pnl && (
+                            <dd className="dd-tips">
+                              <ul className="fancy-tips"></ul>
+                              <a
+                                onClick={() => handleGetLadder(pnl, game?.name)}
+                                id="fancyBetBookBtn"
+                                className="btn-book"
+                              >
+                                Book
+                              </a>
+                            </dd>
+                          )}
                         </dl>
                       </th>
                       <td colSpan={2} className="multi_select ">
-                        <ul>
+                        <ul style={{ borderBottom: "none" }}>
                           <li
+                            style={{ height: "42px" }}
                             onClick={() =>
                               handleBetSlip(
                                 "lay",
@@ -195,12 +233,16 @@ const Fancy = ({ data }) => {
                             className="lay-1"
                             id="lay_1"
                           >
-                            <a id="runsInfo" style={{ cursor: "pointer" }}>
+                            <a
+                              id="runsInfo"
+                              style={{ cursor: "pointer", height: "auto" }}
+                            >
                               {game?.runners?.[0]?.lay?.[0]?.line}
                               <span>{game?.runners?.[0]?.lay?.[0]?.price}</span>
                             </a>
                           </li>
                           <li
+                            style={{ height: "42px" }}
                             onClick={() =>
                               handleBetSlip(
                                 "back",
@@ -211,7 +253,7 @@ const Fancy = ({ data }) => {
                             }
                             className="back-1"
                           >
-                            <a style={{ cursor: "pointer" }}>
+                            <a style={{ cursor: "pointer", height: "auto" }}>
                               {game?.runners?.[0]?.back?.[0]?.line}
                               <span>
                                 {game?.runners?.[0]?.back?.[0]?.price}

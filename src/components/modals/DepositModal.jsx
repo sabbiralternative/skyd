@@ -8,7 +8,6 @@ const DepositModal = ({ setShowModal, setPaymentMethods, amount }) => {
 
   useEffect(() => {
     if (amount) {
-      console.log(amount);
       const floatAmount = parseFloat(amount);
 
       if (typeof floatAmount !== "number") {
