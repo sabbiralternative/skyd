@@ -22,6 +22,40 @@ const WhatsApp = () => {
 
   return (
     <>
+      {socialLink?.instagramLink ? (
+        <div
+          onClick={() => window.open(socialLink?.instagramLink, "_blank")}
+          title="WhatsAppContact"
+          style={{
+            position: "fixed",
+            cursor: "pointer",
+            top: "calc(100dvh - 200px)",
+            left: "17px",
+            zIndex: 999999,
+            display: "flex",
+            width: "max-content",
+            height: "max-content",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "9999px",
+            transition: "all 0.5s",
+          }}
+        >
+          <div
+            style={{
+              height: "100%",
+              marginTop: "-3px",
+              marginLeft: "-3px",
+            }}
+          >
+            <img
+              style={{ height: "40px", width: "40px" }}
+              src={images.instagram}
+              alt=""
+            />
+          </div>
+        </div>
+      ) : null}
       {socialLink?.telegramLink ? (
         <div
           onClick={() => window.open(socialLink?.telegramLink, "_blank")}
