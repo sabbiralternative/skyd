@@ -1,4 +1,7 @@
 const ScoreCard = ({ score2 }) => {
+  if (!score2) {
+    return null;
+  }
   return (
     <div
       style={{ marginTop: "2px" }}
