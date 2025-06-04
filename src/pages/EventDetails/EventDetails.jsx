@@ -13,6 +13,7 @@ import LeftSidebar from "../../components/shared/LeftSidebar/LeftSidebar";
 import RightSidebar from "../../components/shared/RightSidebar/RightSidebar";
 import Notification from "../../components/shared/Header/Notification";
 import ScoreCard from "../../components/modules/EventDetails/ScoreCard";
+import SportsBook from "./SportsBook/SportsBook";
 
 const EventDetails = () => {
   const { eventTypeId, eventId } = useParams();
@@ -189,6 +190,9 @@ const EventDetails = () => {
           {data?.result?.length > 0 && <MatchOdds data={data?.result} />}
           {data?.result?.length > 0 && <Bookmaker data={data?.result} />}
           {data?.result?.length > 0 && <Fancy data={data?.result} />}
+          {data && data?.sportsbook?.Result && (
+            <SportsBook sportsBook={data?.sportsbook?.Result} />
+          )}
         </div>
       </div>
 
