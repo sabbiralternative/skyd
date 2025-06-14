@@ -12,6 +12,7 @@ import useBalance from "../../hooks/balance";
 import { useRef, useState } from "react";
 import useCloseModalClickOutside from "../../hooks/closeModal";
 import { setShowRegisterModal } from "../../redux/features/global/globalSlice";
+import getOtpOnWhatsapp from "../../utils/getOtpOnWhatsapp";
 
 const Register = () => {
   const registerRef = useRef();
@@ -83,6 +84,10 @@ const Register = () => {
     }
   };
 
+  const handleGetOtpOnWhatsapp = async () => {
+    await getOtpOnWhatsapp(mobile, setOTP);
+  };
+
   return (
     <div id="loginBox" className="overlay" style={{ display: "flex" }}>
       <form
@@ -100,22 +105,39 @@ const Register = () => {
               type="text"
               placeholder="Mobile Number"
             />
-            <button
-              onClick={handleOTP}
-              type="button"
-              style={{
-                position: "absolute",
-                right: "1px",
-                top: "1px",
-                background: "var(--bg-primary)",
-                color: "white",
-                padding: "5px 3px",
-                borderRadius: "1px",
-                height: "31px",
-              }}
-            >
-              Get OTP
-            </button>
+            <div style={{ position: "absolute", right: "1px", top: "1px" }}>
+              <button
+                onClick={handleOTP}
+                type="button"
+                style={{
+                  background: "var(--bg-primary)",
+                  color: "white",
+                  padding: "5px 3px",
+                  borderRadius: "1px",
+                  height: "31px",
+                }}
+              >
+                Get OTP Message
+              </button>
+            </div>
+            {Settings.otpWhatsapp && (
+              <button
+                disabled={mobile?.length < 10}
+                onClick={handleGetOtpOnWhatsapp}
+                type="button"
+                style={{
+                  background: "var(--bg-primary)",
+                  color: "white",
+                  padding: "5px 3px",
+                  borderRadius: "1px",
+                  height: "31px",
+                  width: "100%",
+                  marginTop: "2px",
+                }}
+              >
+                Get OTP Whatsapp
+              </button>
+            )}
           </dd>
           <dd>
             <input

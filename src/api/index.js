@@ -56,6 +56,7 @@ export const API = {
   liveCasinoLobby: "",
   banner: "",
   lotusHomeLobby: "",
+  otpless: "",
 };
 
 export const Settings = {
@@ -88,4 +89,5 @@ export const Settings = {
   liveCasinoWolf: "",
   auraWolf: "",
   language: "",
+  otpWhatsapp: "",
 };

@@ -43,10 +43,13 @@
       "betDelay": false,
       "auraWolf": true,
       "liveCasinoWolf": false,
-      "slotWolf": false
+      "slotWolf": false,
+      "otp": true,
+      "otpWhatsapp": true
     },
 
     "endpoint": {
+      "otpless": "https://api7.live/api/exchange/diamond/otpless",
       "eventDetails": "https://cache7.live/api/exchange/encrypted/odds/event",
       "login": "https://api7.live/api/account/diamond/login",
       "inPlayAndPopularEvents": "https://api7.live/api/exchange/odds/inPlayAndPopularEvents",
