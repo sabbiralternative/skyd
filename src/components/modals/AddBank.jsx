@@ -306,7 +306,12 @@ const AddBank = ({ setAddBank, refetchBankData }) => {
                     }}
                     className="input-box "
                   >
-                    <input type="text" placeholder="Enter OTP" name="" />
+                    <input
+                      maxLength={6}
+                      type="text"
+                      placeholder="Enter OTP"
+                      name=""
+                    />
                   </div>
                 )}
                 <div className="btn-box ">

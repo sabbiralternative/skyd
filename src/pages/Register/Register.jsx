@@ -145,6 +145,7 @@ const Register = () => {
               id="loginBoxPassword"
               type="text"
               placeholder="Enter OTP"
+              maxLength={6}
             />
           </dd>
           <dd>
