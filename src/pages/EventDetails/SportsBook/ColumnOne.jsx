@@ -3,7 +3,7 @@ import { handleSportsBookPlaceBet } from "../../../utils/handleSportsBookPlaceBe
 import { useDispatch, useSelector } from "react-redux";
 import { isSportsRunnerSuspended } from "../../../utils/isSportsRunnerSuspended";
 import { useNavigate } from "react-router-dom";
-
+import { CiLock } from "react-icons/ci";
 const ColumnOne = ({
   item,
   isOpen,
@@ -17,47 +17,40 @@ const ColumnOne = ({
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const handlePriceChange = (newPrice, id) => {
+    if (prevPrices[id] !== undefined && newPrice !== prevPrices[id]) {
+      const isGreen = newPrice > prevPrices[id];
+      const blinkClass = isGreen ? "green_blink" : "red_blink";
+
+      // Apply blink class
+      setPriceClasses((prev) => ({
+        ...prev,
+        [id]: blinkClass,
+      }));
+
+      // Remove blink class after 2 seconds
+      setTimeout(() => {
+        setPriceClasses((prev) => {
+          const updated = { ...prev };
+          delete updated[id];
+          return updated;
+        });
+      }, 2000);
+    }
+
+    // Always update the previous price
+    setPrevPrices((prev) => ({
+      ...prev,
+      [id]: newPrice,
+    }));
+  };
   useEffect(() => {
     if (item?.Items) {
-      const newPrevPrices = {};
       item.Items.forEach((column) => {
-        newPrevPrices[column?.Id] = column.Price;
+        handlePriceChange(column.Price, column.Id);
       });
-
-      setPrevPrices({ ...newPrevPrices });
-      const timer = setTimeout(() => {
-        setPriceClasses({});
-      }, 2000);
-      return () => clearTimeout(timer);
     }
-  }, [item?.Items, setPrevPrices, setPriceClasses]);
-
-  useEffect(() => {
-    item?.Items?.forEach((column) => {
-      handlePriceChange(column.Price, column?.Id);
-    });
   }, [item?.Items]);
-
-  const handlePriceChange = (newPrice, id) => {
-    if (prevPrices[id] !== undefined) {
-      if (newPrice !== prevPrices[id]) {
-        if (newPrice > prevPrices[id]) {
-          setPriceClasses((prev) => ({
-            ...prev,
-            [id]: "green_blink",
-          }));
-        } else if (newPrice < prevPrices[id]) {
-          setPriceClasses((prev) => ({ ...prev, [id]: "red_blink" }));
-        }
-      } else {
-        setPriceClasses((prev) => {
-          const updatedClasses = { ...prev };
-          delete updatedClasses[id];
-          return updatedClasses;
-        });
-      }
-    }
-  };
   return (
     <>
       {isOpen && (
@@ -72,6 +65,8 @@ const ColumnOne = ({
           <div style={{ overflow: " visible" }}>
             <div className="bt12683">
               {item?.Items?.map((column, i) => {
+                const isActive =
+                  column?.Price > 0 && !isSportsRunnerSuspended(column, item);
                 return (
                   <div
                     onClick={() =>
@@ -87,6 +82,10 @@ const ColumnOne = ({
                     key={i}
                     data-editor-id="tableOutcomePlate"
                     className="bt6588 bt12698 bt6589"
+                    style={{
+                      cursor: isActive ? "pointer" : "auto",
+                      pointerEvents: isActive ? "auto" : "none",
+                    }}
                   >
                     <div
                       className="bt6592 bt12699"
@@ -101,19 +100,32 @@ const ColumnOne = ({
                       <div className="bt1570">
                         <span className={priceClasses[column?.Id]}></span>
                       </div>
-                      <div
-                        className="bt6596 bt12703"
-                        data-editor-id="tableOutcomePlateName"
-                      >
-                        <span className="bt6598"> {column?.Name}</span>
-                      </div>
-                      <div className="bt6564 bt6599">
-                        <span className="bt6566">
-                          {column?.Price > 0 &&
-                            !isSportsRunnerSuspended(column, item) &&
-                            column?.Price?.toFixed(2)}
-                        </span>
-                      </div>
+                      {isActive ? (
+                        <>
+                          <div
+                            className="bt6596 bt12703"
+                            data-editor-id="tableOutcomePlateName"
+                          >
+                            <span className="bt6598"> {column?.Name}</span>
+                          </div>
+                          <div className="bt6564 bt6599">
+                            <span className="bt6566">
+                              {column?.Price?.toFixed(2)}
+                            </span>
+                          </div>
+                        </>
+                      ) : (
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: "100%",
+                          }}
+                        >
+                          <CiLock />
+                        </div>
+                      )}
                     </div>
                   </div>
                 );

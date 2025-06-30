@@ -49,7 +49,7 @@ const SportsBook = ({ sportsBook }) => {
             const isOpen = openItems[iIdx];
 
             return (
-              <div key={iIdx}>
+              <div key={iIdx} style={{ marginBottom: "10px" }}>
                 <div className="a23_css bt12687">
                   <div onClick={() => toggleItem(iIdx)} className="bt12695">
                     <div className="bt12689 " data-editor-id="marketTitle">
