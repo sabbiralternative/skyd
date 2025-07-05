@@ -34,7 +34,7 @@ const Login = () => {
       localStorage.setItem("buttonValue", JSON.stringify(game));
       localStorage.setItem("token", token);
       localStorage.setItem("bonusToken", bonusToken);
-      if (result?.changePassword) {
+      if (result?.result?.changePassword) {
         navigate("/change-password");
       } else {
         navigate("/");
