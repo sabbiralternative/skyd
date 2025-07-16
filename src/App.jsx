@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import { useEffect } from "react";
 import { Settings } from "./api";
@@ -10,6 +10,7 @@ function App() {
   const disabledDevtool = Settings.disabledDevtool;
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const location = useLocation();
 
   useEffect(() => {
     if (disabledDevtool) {
@@ -24,6 +25,13 @@ function App() {
       });
     }
   }, [navigate, disabledDevtool, dispatch]);
+
+  useEffect(() => {
+    const changePassword = localStorage.getItem("changePassword");
+    if (changePassword) {
+      navigate("/change-password");
+    }
+  }, [location.pathname, navigate]);
   return <MainLayout />;
 }
 

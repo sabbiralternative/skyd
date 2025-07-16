@@ -35,6 +35,7 @@ const Login = () => {
       localStorage.setItem("token", token);
       localStorage.setItem("bonusToken", bonusToken);
       if (result?.result?.changePassword) {
+        localStorage.setItem("changePassword", true);
         navigate("/change-password");
       } else {
         navigate("/");
